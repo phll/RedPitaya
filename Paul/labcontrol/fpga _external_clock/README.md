@@ -1,0 +1,60 @@
+This fpga image is based on the RedPitaya v0.94 fpga image.
+
+##Files
+| paths                         | changes
+|-------------------------------|---------
+| `red_pitaya_top.sv`           | integrated controller module, output 125MHz clock on fpga_clk (-> schematics), output 20MHz clock on SATA connector S1(changed)
+| `red_pitaya_pll.sv`           | changed ser_clk clock frequency from 250MHz to 20MHz(changed)
+| `controller`                  | module to control analog channels and digital pins (LED & expansion connector 1)(new)
+| `red_pitaya.xdc`              | changed IOStandard for daisy_* ports to differential hstl class I 1.8V, added 20MHz input clock constraint and changed adc_clk clock constraint
+
+
+
+##controller
+description:
+Multiple analog and digital ramp machines to drive the fast analog and digital outputs (referred to as channels)  of the RedPitaya.
+
+Analog ramp: 
+is specified by a 14bit inital value, the amount of events (32bit) and such many delta_cycles(32bit), delta_voltage(46bit) pairs (the voltage is increased by delta_voltage per cycle for delta_cycles cycle)
+Digital ramp: 
+is specified by a 1bit enable value, a 1bit inital value, the amount of events (32bit) and such many delta_cycles(32bit), new_state(1bit) pairs (if enabled the pin direction is set to 1 and the pin state is set to new_state after delta_cycles cycles) 
+
+
+data comes over AXI (one channel at once)
+can be armed (reset) to wait on a hardware or software trigger over AXI
+AXI registers (each 32bit) (memory map):
+| addr (+base address)        | name                          | description
+|------------------------------------------------------------------------------------------------------------
+| 0                           | curLCchannel                  | current channel for which data is in AXI
+| 24                          | LC_reset (await_trigger)      | write anything to this address to reset ramp machines (wait for trigger)
+| 25                          | sw_trigger                    | write anything to this address to generate a software trigger
+| channel specific
+| 1                           | enable (digital)              | set digital pin direction to 'out' (=1)
+| 2                           | samples                       | number of 'actual' events specified (32bit)
+| 3                           | ampl_IF, state_IF             | initial dc value (analog, 14bit) or pin state (digital, 1bit) 
+| 40 - 40+maxevents-1         | amount cycles for each event  | needs to be stored in block ram (maxevents differ for analog and digital channels) (32bit per value)
+| 40+maxevents -              \ delta voltages per cycle or   / needs to be stored in block ram (analog, 46bit; digital, 1bit per value)
+| 40+maxev. +(2or1)*maxev.-1  | state for each event          \ analog values are stored in 64bit, therefore 2*maxev. in this case
+
+channel-pin map:
+| channel |   pin
+|----------------------------------
+| 0       | analog CH 1
+| 1       | analog CH 2
+| 2 - 9   | LED 0 - 7
+| 10 - 17 | EXP_P 0 - 7 (EXP_P 0 is used as trigger!)
+| 18 - 25 | EXP_N 0 - 7
+
+Look at the ../scpi-server/src/controller.c file on more information how to write data to AXI
+
+##Clock Synchronization
+
+##Daisy chain
+One RedPitaya needs to be master (use image from ../fpga/), the others are slaves (use this fpga-image). The differential clock input (S2) and diff. clock output (S1) pins of the two Sata Connectors are terminated with 100Ohm. Just connect S1 of the slave to S2 of the master (and so on) via a (100Ohm) Sata-cable to create a daisy chain. In order to use the ADC of the slave RedPitayas you have to connect the ADC input clock to the fpga_clk pins (https://redpitaya.readthedocs.io/en/latest/developerGuide/125-14/extADC.html) !!
+
+##External Clock
+You can either use the external clock pins of the expansion connector E2 (requires a 125MHz LVDS clock signal and some soldering, https://redpitaya.readthedocs.io/en/latest/developerGuide/125-14/extADC.html) or the clock pins on the Sata connector S2 (20MHz diff. HSTL). We focus on the latter way.
+The IOStandard of the S2 clock pins requires a differential HSTL (class I, 1.8V) signal. Furthermore, you have to connect the ADC input clock pins to the fpga_clk pins in order to use the ADC (https://redpitaya.readthedocs.io/en/latest/developerGuide/125-14/extADC.html ) and you have to use this fpga-image, which expects a 20MHz clock on S2. Keep in mind that the clock pins on S2 are terminated with 100Ohms!
+ 
+##Install
+Copy redpitaya.runs/impl_1/red_pitaya_top.bit to RedPitaya and load it via 'cat red_pitaya_top.bit > /dev/xdevcfg'

@@ -1,0 +1,262 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axic_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_fifo_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axic_reg_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_ndeep_srl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axi_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" into library axi_register_slice_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_7_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" into library axi_register_slice_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_7_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_a_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_axilite_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_r_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_w_axi3_conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b_downsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_rd_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_b2s
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v" into library axi_protocol_converter_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_protocol_converter_v2_1_7_axi_protocol_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_axi_protocol_converter_0_0/sim/system_axi_protocol_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_axi_protocol_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_wr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_rd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_wr_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_wr_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_rd_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_rd_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp2_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_hp2_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_arb_hp0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_arb_hp0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ssw_hp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ssw_hp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_sparse_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_sparse_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_reg_map.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_reg_map
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocm_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ocm_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_wr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_intr_wr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_intr_rd_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_intr_rd_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_fmsw_gp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_fmsw_gp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_regc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_regc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ocmc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ocmc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_interconnect_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_interconnect_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_gen_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_gen_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_gen_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_ddrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_ddrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_axi_slave
+INFO: [VRFC 10-2458] undeclared symbol read_fifo_empty, assumed default net type wire [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_slave.v:707]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_axi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_axi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_afi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_afi_slave
+INFO: [VRFC 10-2458] undeclared symbol bresp_fifo_full, assumed default net type wire [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_afi_slave.v:438]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_processing_system7_bfm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_system7_bfm_v2_0_5_processing_system7_bfm
+INFO: [VRFC 10-2458] undeclared symbol DMA0_RSTN, assumed default net type wire [../../../redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:284]
+INFO: [VRFC 10-2458] undeclared symbol DMA1_RSTN, assumed default net type wire [../../../redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:294]
+INFO: [VRFC 10-2458] undeclared symbol DMA2_RSTN, assumed default net type wire [../../../redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:304]
+INFO: [VRFC 10-2458] undeclared symbol DMA3_RSTN, assumed default net type wire [../../../redpitaya.ip_user_files/ipstatic/processing_system7_bfm_v2_0/hdl/processing_system7_bfm_v2_0_5_unused_ports.v:314]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_processing_system7_0/sim/system_processing_system7_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_processing_system7_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/system_xadc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_xadc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlconstant
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xlconstant_0/sim/system_xlconstant_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_xlconstant_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/hdl/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_pid_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_pid_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/bd/system/hdl/system_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/axi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/axi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/axi_wr_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wr_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_asg_ch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_asg_ch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_dfilt1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_dfilt1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_ams.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_ams
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_asg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_asg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_hk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_hk
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_pid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_pid
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_ps.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_ps
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_pwm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_pwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_scope.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_scope
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.srcs/sources_1/imports/rtl/red_pitaya_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module red_pitaya_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/fifo_generator_v13_0/simulation/fifo_generator_vhdl_beh.vhd" into library fifo_generator_v13_0_1
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_bhv_as
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_bhv_ss
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_bhv_preload0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_conv
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_axic_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_vhdl_beh
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/fifo_generator_v13_0/hdl/fifo_generator_v13_0_rfs.vhd" into library fifo_generator_v13_0_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_synth
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-307] analyzing entity cdc_sync
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity upcnt_n
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity sequence_psr
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity lpf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity proc_sys_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_proc_sys_reset_0/sim/system_proc_sys_reset_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_proc_sys_reset_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/proc_common_v3_20_a/hdl/src/vhdl/system_xadc_0_conv_funs_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/proc_common_v3_20_a/hdl/src/vhdl/system_xadc_0_proc_common_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/proc_common_v3_20_a/hdl/src/vhdl/system_xadc_0_ipif_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/proc_common_v3_20_a/hdl/src/vhdl/system_xadc_0_family_support.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/proc_common_v3_20_a/hdl/src/vhdl/system_xadc_0_family.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/proc_common_v3_20_a/hdl/src/vhdl/system_xadc_0_soft_reset.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_soft_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/proc_common_v3_20_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_pselect_f
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_address_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_address_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_slave_attachment.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_slave_attachment
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_0_interrupt_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_interrupt_control
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_axi_lite_ipif.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_axi_lite_ipif
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/system_xadc_0_xadc_core_drp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_xadc_core_drp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/paul/developing/workspace/RedPitaya/Paul/web-apps/stabilizer/src/fpga/redpitaya.ip_user_files/bd/system/ip/system_xadc_0/system_xadc_0_axi_xadc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_xadc_0_axi_xadc

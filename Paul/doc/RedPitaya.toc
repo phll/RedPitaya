@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {3}Die RedPitaya Api}{3}{section.3}
 \contentsline {subsection}{\numberline {3.1}Oszilloskop-Funktion}{3}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Kompilierung (Ubuntu)}{4}{subsection.3.2}
-\contentsline {section}{\numberline {4}Web-Apps}{5}{section.4}
+\contentsline {section}{\numberline {4}Web-Apps}{4}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aufbau, ben\IeC {\"o}tigte Dateien und Installation}{5}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Controller-Datei und Kommunikation zwischen Server- und Clientseite}{6}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Kompilierung}{8}{subsubsection.4.2.1}

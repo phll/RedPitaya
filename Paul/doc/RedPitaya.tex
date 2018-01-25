@@ -63,7 +63,7 @@ commentstyle=\itshape\color{green},
 identifierstyle=\color{blue},
 stringstyle=\color{orange},basicstyle=\footnotesize\ttfamily}
 
-\lstinputlisting[caption={Makefile},captionpos=t,language=bash]{../lock/Makefile}
+\lstinputlisting[caption={Makefile},captionpos=t,language=bash]{example-makefile}
 
 Im jeweiligen Verzeichnis kann das Programm dann im Terminal mit \\'make CROSS\_COMPILE=arm-linux-gnueabihf- all' (hardfloated Version) kompiliert werden. Hat man zuvor das Skript \grqq settings.sh\grqq~(Repository) ausgeführt, reicht der Befehl 'make all' aus. Vor dem erneuten Kompilieren kann es notwendig sein, zuerst alle zuvor bei der Kompilierung erzeugten Datein zu löschen ('make clean').
 
@@ -150,7 +150,7 @@ rp_app_params_t rp_main_params[..];
 \end{lstlisting}
 In der Controller-Datei muss die Struktur erneut definiert werden, da die Definition aus dem NGINX-RP-Modul hier nicht bekannt ist. Das ermöglicht gewisse Freiheiten bei den Variablentypen und Namen, denn Controller-Datei und NGINX-Module tauschen im Prinzip nur einen Void-Zeiger auf obiges Array miteinander aus, interpretieren (casten) aber alles Weitere mit ihrer lokalen Definition der Struktur. (Mindestens) die Gesamtgröße der Struktur in Byte muss in beiden Definitionen also zwingend übereinstimmen.\\
 
-Die Controller-Datei muss neben der Parameter-Strukur einige Funktionen implementieren, die als Schnittstelle zwischen dem eigentlichen Programm und dem NGINX-Modul fungieren:
+Die Controller-Datei muss neben der Parameter-Strukur einige Funktionen implementieren, die als Schnittstelle zwischen dem eigentlichen Programm und dem NGINX-Modul fungieren (weitere, wichtige Details zur Implementierung sollte man sich anhand des Beispiels web-apps/test/ klar machen!):
 \begin{itemize}
 \item int rp\_app\_init(void) ..wird aufgerufen, wenn Start-URL aufgerufen wird. Bei einem Fehler sollte -1, ansonsten 0 zurückgegeben werden.
 \item int rp\_app\_exit(void) ..wird aufgerufen, wenn Stop-URL aufgerufen wird. Bei einem Fehler sollte -1, ansonsten 0 zurückgegeben werden.

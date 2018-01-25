@@ -1,0 +1,42 @@
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.M_AXI_GP0.master
+[0] : *ZYNQ_BFM_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.M_AXI_GP1.master
+[0] : *ZYNQ_BFM_INFO : M_AXI_GP1 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP1 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP2 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP3 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_ACP : Port is DISABLED.
+Warning: *** Warning: The analog data file for XADC was not found. Use the SIM_MONITOR_FILE generic to specify the input analog data file name or use default name: design.txt. 
+Time: 0 ps  Iteration: 0  Process: /top_tb/top/ps/system_i/xadc/inst/AXI_XADC_CORE_I/XADC_INST/READFILE_P  File: /opt/Xilinx/Vivado/2017.1/data/vhdl/src/unisims/primitive/XADC.vhd
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.M_AXI_GP0.master
+[0] : *ZYNQ_BFM_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.M_AXI_GP1.master
+[0] : *ZYNQ_BFM_INFO : M_AXI_GP1 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP1 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP2 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_HP3 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: top_tb.top.ps.system_i.processing_system7.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_BFM_INFO : S_AXI_ACP : Port is DISABLED.
+Warning: *** Warning: The analog data file for XADC was not found. Use the SIM_MONITOR_FILE generic to specify the input analog data file name or use default name: design.txt. 
+Time: 0 ps  Iteration: 0  Process: /top_tb/top/ps/system_i/xadc/inst/AXI_XADC_CORE_I/XADC_INST/READFILE_P  File: /opt/Xilinx/Vivado/2017.1/data/vhdl/src/unisims/primitive/XADC.vhd

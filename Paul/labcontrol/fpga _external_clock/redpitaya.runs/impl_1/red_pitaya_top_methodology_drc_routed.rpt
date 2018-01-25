@@ -1,0 +1,1164 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
+| Date         : Wed Oct 25 23:04:36 2017
+| Host         : AE5UPH16 running 64-bit Ubuntu 16.04.3 LTS
+| Command      : report_methodology -file red_pitaya_top_methodology_drc_routed.rpt -rpx red_pitaya_top_methodology_drc_routed.rpx
+| Design       : red_pitaya_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 210
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal      | 72         |
+| SYNTH-11  | Warning  | DSP output not registered                       | 6          |
+| SYNTH-16  | Warning  | Address collision                               | 14         |
+| TIMING-16 | Warning  | Large setup violation                           | 33         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                     | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                   | 48         |
+| XDCC-5    | Warning  | User Non-Timing constraint/property overwritten | 4          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port        | 32         |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[10].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[11].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[12].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[13].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[14].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[15].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[16].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[17].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[18].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[19].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[20].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[21].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[22].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[23].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[24].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[25].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[2].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[3].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[4].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[5].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[6].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[7].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[8].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance DigMachs[9].dig_machs/mem/mem_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_A/mem/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#37 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#38 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#39 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#40 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#41 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#42 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance analog_B/mem/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#43 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[0]/dac_buf_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#44 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[0]/dac_buf_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#45 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[0]/dac_buf_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#46 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[0]/dac_buf_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#47 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[0]/dac_buf_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#48 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[0]/dac_buf_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#49 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[0]/dac_buf_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#50 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[1]/dac_buf_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#51 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[1]/dac_buf_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#52 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[1]/dac_buf_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#53 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[1]/dac_buf_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#54 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[1]/dac_buf_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#55 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[1]/dac_buf_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#56 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_asg/ch[1]/dac_buf_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#57 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_a_buf_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#58 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_a_buf_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#59 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_a_buf_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#60 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_a_buf_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#61 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_a_buf_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#62 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_a_buf_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#63 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_a_buf_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#64 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_b_buf_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#65 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_b_buf_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#66 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_b_buf_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#67 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_b_buf_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#68 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_b_buf_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#69 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_b_buf_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#70 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/adc_b_buf_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#71 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/i_wr0/fifo_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#72 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance i_scope/i_wr1/fifo_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-11#1 Warning
+DSP output not registered  
+DSP instance i_scope/i_dfilt1_cha/aa_mult is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#2 Warning
+DSP output not registered  
+DSP instance i_scope/i_dfilt1_cha/kk_mult is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#3 Warning
+DSP output not registered  
+DSP instance i_scope/i_dfilt1_cha/pp_mult is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#4 Warning
+DSP output not registered  
+DSP instance i_scope/i_dfilt1_chb/aa_mult is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#5 Warning
+DSP output not registered  
+DSP instance i_scope/i_dfilt1_chb/kk_mult is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#6 Warning
+DSP output not registered  
+DSP instance i_scope/i_dfilt1_chb/pp_mult is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-16#1 Warning
+Address collision  
+Block RAM i_asg/ch[0]/dac_buf_reg_0 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#2 Warning
+Address collision  
+Block RAM i_asg/ch[0]/dac_buf_reg_1 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#3 Warning
+Address collision  
+Block RAM i_asg/ch[0]/dac_buf_reg_2 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#4 Warning
+Address collision  
+Block RAM i_asg/ch[0]/dac_buf_reg_3 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#5 Warning
+Address collision  
+Block RAM i_asg/ch[0]/dac_buf_reg_4 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#6 Warning
+Address collision  
+Block RAM i_asg/ch[0]/dac_buf_reg_5 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#7 Warning
+Address collision  
+Block RAM i_asg/ch[0]/dac_buf_reg_6 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#8 Warning
+Address collision  
+Block RAM i_asg/ch[1]/dac_buf_reg_0 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#9 Warning
+Address collision  
+Block RAM i_asg/ch[1]/dac_buf_reg_1 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#10 Warning
+Address collision  
+Block RAM i_asg/ch[1]/dac_buf_reg_2 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#11 Warning
+Address collision  
+Block RAM i_asg/ch[1]/dac_buf_reg_3 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#12 Warning
+Address collision  
+Block RAM i_asg/ch[1]/dac_buf_reg_4 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#13 Warning
+Address collision  
+Block RAM i_asg/ch[1]/dac_buf_reg_5 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#14 Warning
+Address collision  
+Block RAM i_asg/ch[1]/dac_buf_reg_6 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.007 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[20] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.014 ns between i_pid/out_2_sat_reg[3]/C (clocked by adc_clk) and i_scope/i_dfilt1_chb/bb_mult/B[3] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.021 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[15] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.026 ns between ps/axi_slave_gp0/wr_wdata_reg[9]/C (clocked by adc_clk) and i_controller/DigMachs[4].dig_machs/listlen_reg[9]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.031 ns between i_pid/out_1_sat_reg[4]/C (clocked by adc_clk) and i_scope/i_dfilt1_cha/bb_mult/B[0] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.052 ns between ps/axi_slave_gp0/wr_wdata_reg[16]/C (clocked by adc_clk) and i_controller/DigMachs[3].dig_machs/inf_reg[16]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.060 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[17] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.067 ns between ps/axi_slave_gp0/wr_wdata_reg[9]/C (clocked by adc_clk) and i_controller/DigMachs[3].dig_machs/inf_reg[9]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.068 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[16] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.075 ns between i_pid/out_1_sat_reg[4]/C (clocked by adc_clk) and i_scope/i_dfilt1_cha/bb_mult/B[11] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.083 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[28] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.083 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[29] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.099 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[18] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.100 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[24] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.100 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[25] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.102 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[22] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.107 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[26] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.107 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[27] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.111 ns between i_scope/i_dfilt1_chb/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_chb/aa_mult/A[21] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.119 ns between i_pid/out_1_sat_reg[4]/C (clocked by adc_clk) and i_scope/i_dfilt1_cha/bb_mult/B[4] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.119 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[22] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.145 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[24] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.145 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[25] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.145 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[26] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.145 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[27] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.146 ns between ps/axi_slave_gp0/wr_wdata_reg[22]/C (clocked by adc_clk) and i_controller/DigMachs[10].dig_machs/inf_reg[22]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.168 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[28] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -1.175 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[21] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -1.178 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[19] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -1.185 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[20] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -1.199 ns between ps/axi_slave_gp0/wr_wdata_reg[9]/C (clocked by adc_clk) and i_controller/DigMachs[3].dig_machs/listlen_reg[9]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -1.245 ns between i_scope/i_dfilt1_cha/aa_mult/CLK (clocked by adc_clk) and i_scope/i_dfilt1_cha/aa_mult/A[23] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -1.278 ns between i_pid/out_2_sat_reg[3]/C (clocked by adc_clk) and i_scope/i_dfilt1_chb/bb_mult/B[9] (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin i_hk/i_DNA/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[0] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[1] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[2] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[3] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[4] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[5] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[6] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on exp_n_io[7] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[0] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[1] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[2] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[3] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[4] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[5] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[6] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on exp_p_io[7] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on led_o[0] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on led_o[1] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on led_o[2] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on led_o[3] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on led_o[4] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on led_o[5] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on led_o[6] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on led_o[7] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on adc_clk_o[0] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on adc_clk_o[1] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on dac_clk_o relative to clock(s) VIRTUAL_pll_dac_clk_2p 
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[0] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[10] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[11] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[12] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[13] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[1] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[2] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[3] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[4] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[5] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[6] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[7] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[8] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[9] relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on dac_pwm_o[0] relative to clock(s) VIRTUAL_pll_pwm_clk 
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on dac_pwm_o[1] relative to clock(s) VIRTUAL_pll_pwm_clk 
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on dac_pwm_o[2] relative to clock(s) VIRTUAL_pll_pwm_clk 
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on dac_pwm_o[3] relative to clock(s) VIRTUAL_pll_pwm_clk 
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on dac_rst_o relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on dac_sel_o relative to clock(s) VIRTUAL_adc_clk 
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on dac_wrt_o relative to clock(s) VIRTUAL_pll_pwm_clk 
+Related violations: <none>
+
+XDCC-5#1 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[0] overrides a previous user property.
+New Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 111)
+Previous Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 100)
+Related violations: <none>
+
+XDCC-5#2 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[1] overrides a previous user property.
+New Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 111)
+Previous Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 100)
+Related violations: <none>
+
+XDCC-5#3 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[2] overrides a previous user property.
+New Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 111)
+Previous Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 100)
+Related violations: <none>
+
+XDCC-5#4 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[3] overrides a previous user property.
+New Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 111)
+Previous Source: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 100)
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][0]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][10]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][11]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][12]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][13]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][14]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][15]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][1]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][2]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][3]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][4]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][5]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][6]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][7]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][8]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[0][9]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][0]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][10]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][11]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][12]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][13]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][14]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][15]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][1]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][2]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][3]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][4]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][5]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][6]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][7]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][8]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.400 ns has been defined on port 'adc_dat_i[1][9]' relative to clock adc_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock adc_clk 3.400 [get_ports {adc_dat_i[*][*]}]
+/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga _external_clock/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc (Line: 218)
+Related violations: <none>
+
+

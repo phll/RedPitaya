@@ -3,7 +3,7 @@ This branch is forked from the official RedPitaya repository. It also contains t
 
 | directories  | contents
 |--------------|----------------------------------------------------------------
-| Paul         | Laser-Lock-App, some test-apps and a documentation
+| Paul         | Laser-Lock-App, LabControl-App, some test-apps and an documentation (german)
 
 
 

@@ -1,0 +1,363 @@
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.1/bin/unwrapped/lnx64.o/xelab -wto 901489a275b04fe9a22868dcad18cc04 --debug typical --relax --mt 8 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_1_4 -L axi_data_fifo_v2_1_11 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_12 -L axi_protocol_converter_v2_1_12 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_11 -L xil_common_vip_v1_0_0 -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_13 -L axi_vip_v1_0_1 -L xlconstant_v1_1_3 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port IRQ_F2P [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.ip_user_files/bd/system/ip/system_processing_system7_0/sim/system_processing_system7_0.v:891]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_bid [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4597]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_rid [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4615]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_bid [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6536]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 6 for port m_axi_rid [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6554]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 64 for port m_axi_rdata [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6555]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 64 for port m_axi_rdata [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4616]
+WARNING: [VRFC 10-278] actual bit length 20 differs from formal bit length 12 for port a_addr [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/new/controller.sv:288]
+WARNING: [VRFC 10-278] actual bit length 20 differs from formal bit length 7 for port a_addr [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/new/controller.sv:437]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv:16441]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv:16456]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv:16470]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv:16484]
+Completed static elaboration
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15880 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15885 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15890 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15895 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15900 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15905 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15910 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15915 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15930 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15935 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15880 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15885 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15890 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15895 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15900 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15905 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15910 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15915 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15930 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15935 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15880 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15885 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15890 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15895 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15900 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15905 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15910 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15915 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15930 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15935 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15880 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15885 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15890 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15895 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15900 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15905 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15910 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15915 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15920 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15925 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15930 : The "System Verilog Property Declaration" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv" Line 15935 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16441, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16456, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16470, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16484, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16441, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16456, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16470, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16484, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16441, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16456, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16470, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16484, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16441, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16456, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16470, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 16484, File /wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/axi_vip_v1_0/hdl/axi_vip_v1_0_vl_rfs.sv
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/prj/v0.94/rtl/red_pitaya_top.sv" Line 52. Module red_pitaya_top(GITH=160'b1010000010100001101000101010001110110000101100011011001010110011110000001100000111000010110000111101000011010001110100101101001111100000111000011110001011100011) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/gpio_if.sv" Line 1. Module gpio_if(DW=32'b011000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/red_pitaya_pll.sv" Line 13. Module red_pitaya_pll doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/prj/v0.94/rtl/red_pitaya_ps.sv" Line 28. Module red_pitaya_ps(gpio_if(DW=32'b011000)_m,sys_bus_if_default_m) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/axi4_if.sv" Line 1. Module axi4_if(IW=32'b01100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/axi4_slave.sv" Line 49. Module axi4_slave(DW=32'b0100000,IW=32'b01100)(axi4_if(IW=32'b01100)_s,sys_bus_if_default_m) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_interconnect.sv" Line 7. Module sys_bus_interconnect(SN=32'b01000)(sys_bus_if_default_s,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_stub.sv" Line 7. Module sys_bus_stub(sys_bus_if_default_s) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_stub.sv" Line 7. Module sys_bus_stub(sys_bus_if_default_s) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_stub.sv" Line 7. Module sys_bus_stub(sys_bus_if_default_s) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_ams.v" Line 41. Module red_pitaya_ams doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_hk.v" Line 29. Module red_pitaya_hk doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_scope.v" Line 50. Module red_pitaya_scope doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/red_pitaya_dfilt1.sv" Line 22. Module red_pitaya_dfilt1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/red_pitaya_dfilt1.sv" Line 22. Module red_pitaya_dfilt1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_asg.v" Line 51. Module red_pitaya_asg_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_asg_ch.v" Line 37. Module red_pitaya_asg_ch(RSZ=14) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_asg_ch.v" Line 37. Module red_pitaya_asg_ch(RSZ=14) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid.v" Line 52. Module red_pitaya_pid doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/prj/v0.94/rtl/red_pitaya_top.sv" Line 52. Module red_pitaya_top(GITH=160'b1010000010100001101000101010001110110000101100011011001010110011110000001100000111000010110000111101000011010001110100101101001111100000111000011110001011100011) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/sys_bus_if.sv" Line 7. Module sys_bus_if_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/gpio_if.sv" Line 1. Module gpio_if(DW=32'b011000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/red_pitaya_pll.sv" Line 13. Module red_pitaya_pll doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/prj/v0.94/rtl/red_pitaya_ps.sv" Line 28. Module red_pitaya_ps(gpio_if(DW=32'b011000)_m,sys_bus_if_default_m) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/interface/axi4_if.sv" Line 1. Module axi4_if(IW=32'b01100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/axi4_slave.sv" Line 49. Module axi4_slave(DW=32'b0100000,IW=32'b01100)(axi4_if(IW=32'b01100)_s,sys_bus_if_default_m) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_interconnect.sv" Line 7. Module sys_bus_interconnect(SN=32'b01000)(sys_bus_if_default_s,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m,sys_bus_if_default_m) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_stub.sv" Line 7. Module sys_bus_stub(sys_bus_if_default_s) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_stub.sv" Line 7. Module sys_bus_stub(sys_bus_if_default_s) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/sys_bus_stub.sv" Line 7. Module sys_bus_stub(sys_bus_if_default_s) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_ams.v" Line 41. Module red_pitaya_ams doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pwm.sv" Line 13. Module red_pitaya_pwm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_hk.v" Line 29. Module red_pitaya_hk doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_scope.v" Line 50. Module red_pitaya_scope doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/red_pitaya_dfilt1.sv" Line 22. Module red_pitaya_dfilt1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/red_pitaya_dfilt1.sv" Line 22. Module red_pitaya_dfilt1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_asg.v" Line 51. Module red_pitaya_asg_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_asg_ch.v" Line 37. Module red_pitaya_asg_ch(RSZ=14) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_asg_ch.v" Line 37. Module red_pitaya_asg_ch(RSZ=14) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid.v" Line 52. Module red_pitaya_pid doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/imports/fpga/rtl/classic/red_pitaya_pid_block.v" Line 49. Module red_pitaya_pid_block(PSR=12,ISR=18,DSR=10) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.system_xadc_0_ipif_pkg
+Compiling package xil_defaultlib.system_xadc_0_proc_common_pkg
+Compiling package xil_defaultlib.system_xadc_0_family_support
+Compiling package ieee.std_logic_signed
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.sys_bus_if_default
+Compiling module xil_defaultlib.gpio_if(DW=32'b011000)
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=50,CLKIN...
+Compiling module xil_defaultlib.red_pitaya_pll
+Compiling module unisims_ver.BUFG_2
+Compiling module xil_defaultlib.axi_master(IW=6)
+Compiling module xil_defaultlib.axi4_if(IW=32'b01100)
+Compiling module xil_defaultlib.axi4_slave(DW=32'b0100000,IW=32'...
+Compiling module unisims_ver.BUFG_4
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axi_r...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_12.axi_register_slice_v2_1_12_axi_r...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_b...
+Compiling module axi_protocol_converter_v2_1_12.axi_protocol_converter_v2_1_12_a...
+Compiling module xil_defaultlib.system_axi_protocol_converter_0_...
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.lpf [\lpf(c_ext_rst_width=1,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture system_proc_sys_reset_0_arch of entity xil_defaultlib.system_proc_sys_reset_0 [system_proc_sys_reset_0_default]
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ge...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ge...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_fm...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ar...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ss...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_in...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_sp...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_dd...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_oc...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_oc...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_re...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_re...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_if(C_AXI_PROTOCOL...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_onehot_to_binary(...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_srl_rtl(C_A_WIDTH...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_axi...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_thr...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_syn...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_axi...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_syn...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_syn...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_cor...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_rep...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_top...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ax...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ax...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_if(C_AXI_PROTOCOL...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_onehot_to_binary(...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_srl_rtl(C_A_WIDTH...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_axi...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_thr...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_axi...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_syn...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_cor...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_top...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ax...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ax...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_if(C_AXI_PROTOCOL...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_axi...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_syn...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_cor...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_top...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_in...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_in...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_af...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_af...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_af...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_af...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_if(C_AXI_PROTOCOL...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_onehot_to_binary(...
+Compiling module smartconnect_v1_0.sc_util_v1_0_2_srl_rtl(C_A_WIDTH...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_axi...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_thr...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_axi...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_cor...
+Compiling module axi_protocol_checker_v1_1_13.axi_protocol_checker_v1_1_13_top...
+Compiling module axi_vip_v1_0_1.axi_vip_v1_0_1_top(C_AXI_PROTOCO...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0_ax...
+Compiling module axi_vip_v1_0_1.processing_system7_vip_v1_0_0(C_...
+Compiling module xil_defaultlib.system_processing_system7_0
+Compiling architecture implementation of entity xil_defaultlib.system_xadc_0_interrupt_control [\system_xadc_0_interrupt_control...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=5,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=3,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=4,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_pselect_f [\system_xadc_0_pselect_f(c_ab=1,...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_address_decoder [\system_xadc_0_address_decoder(c...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_slave_attachment [\system_xadc_0_slave_attachment(...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_axi_lite_ipif [\system_xadc_0_axi_lite_ipif(c_s...]
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_41="1000000100000000"...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_xadc_core_drp [\system_xadc_0_xadc_core_drp(c_s...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111001010")(0...]
+Compiling architecture fdrse_v of entity unisim.FDRSE [fdrse_default]
+Compiling architecture implementation of entity xil_defaultlib.system_xadc_0_soft_reset [\system_xadc_0_soft_reset(c_rese...]
+Compiling architecture imp of entity xil_defaultlib.system_xadc_0_axi_xadc [\system_xadc_0_axi_xadc(1,22,1,7...]
+Compiling module xil_defaultlib.system_xadc_0
+Compiling module xlconstant_v1_1_3.xlconstant_v1_1_3_xlconstant(CON...
+Compiling module xil_defaultlib.system_xlconstant_0
+Compiling module xil_defaultlib.system
+Compiling module xil_defaultlib.red_pitaya_ps(gpio_if(DW=32'b011...
+Compiling module xil_defaultlib.sys_bus_interconnect(SN=32'b0100...
+Compiling module xil_defaultlib.sys_bus_stub(sys_bus_if_default_...
+Compiling module xil_defaultlib.red_pitaya_ams
+Compiling module xil_defaultlib.red_pitaya_pwm
+Compiling module unisims_ver.ODDR_2
+Compiling module unisims_ver.ODDR_4
+Compiling module unisims_ver.DNA_PORT(SIM_DNA_VALUE=57'b01000...
+Compiling module xil_defaultlib.red_pitaya_hk
+Compiling module unisims_ver.IOBUF_2
+Compiling module xil_defaultlib.red_pitaya_dfilt1
+Compiling module xil_defaultlib.axi_wr_fifo(FW=8)
+Compiling module xil_defaultlib.red_pitaya_scope
+Compiling module xil_defaultlib.red_pitaya_asg_ch(RSZ=14)
+Compiling module xil_defaultlib.red_pitaya_asg_default
+Compiling module xil_defaultlib.red_pitaya_pid_block(PSR=12,ISR=...
+Compiling module xil_defaultlib.red_pitaya_pid
+Compiling module xil_defaultlib.bram_tdp(DATA=78,ADDR=12)
+Compiling module xil_defaultlib.Analog_ramp_machine_default
+Compiling module xil_defaultlib.bram_tdp(DATA=33,ADDR=7)
+Compiling module xil_defaultlib.Digital_ramp_machine_default
+Compiling module xil_defaultlib.controller_default
+Compiling module xil_defaultlib.red_pitaya_top(GITH=160'b1010000...
+Compiling module xil_defaultlib.top_tb
+Compiling package axi_vip_v1_0_1.axi_vip_v1_0_1_pkg
+Compiling package xil_common_vip_v1_0_0.xil_common_vip_v1_0_0_pkg
+Compiling package std.std
+Compiling package smartconnect_v1_0.sc_util_v1_0_2_pkg
+Built simulation snapshot top_tb_behav

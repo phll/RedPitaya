@@ -1,0 +1,579 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Oct  6 14:31:19 2017
+# Process ID: 17758
+# Current directory: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1
+# Command line: vivado -log red_pitaya_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source red_pitaya_top.tcl -notrace
+# Log file: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/red_pitaya_top.vdi
+# Journal file: /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source red_pitaya_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.1/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1118.883 ; gain = 21.023 ; free physical = 1819 ; free virtual = 5665
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/system_axi_protocol_converter_0_0.dcp' for cell 'ps/system_i/axi_protocol_converter_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.dcp' for cell 'ps/system_i/proc_sys_reset'
+INFO: [Project 1-454] Reading design checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.dcp' for cell 'ps/system_i/processing_system7'
+INFO: [Project 1-454] Reading design checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.dcp' for cell 'ps/system_i/xadc'
+INFO: [Project 1-454] Reading design checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xlconstant_0/system_xlconstant_0.dcp' for cell 'ps/system_i/xlconstant'
+INFO: [Netlist 29-17] Analyzing 1108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0_board.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0_board.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.xdc] for cell 'ps/system_i/processing_system7/inst'
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.xdc] for cell 'ps/system_i/processing_system7/inst'
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.xdc] for cell 'ps/system_i/xadc/inst'
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.xdc] for cell 'ps/system_i/xadc/inst'
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:225]
+INFO: [Timing 38-2] Deriving generated clocks [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:225]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:225]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:225]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1991.539 ; gain = 503.508 ; free physical = 1024 ; free virtual = 4950
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_o]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:225]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:226]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:226]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2x]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:226]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:227]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:227]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2p]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:227]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_1x'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:229]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:229]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_1x]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:229]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:230]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:230]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2x]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:230]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:231]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:231]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2p]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:231]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'ser_clk'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:232]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:232]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks ser_clk]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:232]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'pdm_clk'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:233]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:233]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks pdm_clk]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:233]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:234]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:234]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:234]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:234]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:234]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:235]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:235]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:235]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:235]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc:235]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.srcs/constrs_1/imports/sdc/red_pitaya.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 40 instances
+
+link_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1991.543 ; gain = 872.660 ; free physical = 1085 ; free virtual = 4988
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2023.555 ; gain = 32.012 ; free physical = 1077 ; free virtual = 4979
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1389069fe
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2040.555 ; gain = 0.000 ; free physical = 1077 ; free virtual = 4980
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 660 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 106c6e2f7
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2040.555 ; gain = 0.000 ; free physical = 1073 ; free virtual = 4976
+INFO: [Opt 31-389] Phase Constant propagation created 5 cells and removed 13 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 16a1c493f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2040.555 ; gain = 0.000 ; free physical = 1072 ; free virtual = 4975
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 211 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 16a1c493f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2040.555 ; gain = 0.000 ; free physical = 1072 ; free virtual = 4975
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 16a1c493f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2040.555 ; gain = 0.000 ; free physical = 1072 ; free virtual = 4975
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2040.555 ; gain = 0.000 ; free physical = 1072 ; free virtual = 4975
+Ending Logic Optimization Task | Checksum: 16a1c493f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2040.555 ; gain = 0.000 ; free physical = 1072 ; free virtual = 4975
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for i_DNA
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 18 BRAM(s) out of a total of 72 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 14 newly gated: 68 Total Ports: 144
+Number of Flops added for Enable Generation: 7
+
+Ending PowerOpt Patch Enables Task | Checksum: 13397e41f
+
+Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 1020 ; free virtual = 4928
+Ending Power Optimization Task | Checksum: 13397e41f
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2324.152 ; gain = 283.598 ; free physical = 1039 ; free virtual = 4948
+49 Infos, 12 Warnings, 10 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 2324.152 ; gain = 332.609 ; free physical = 1040 ; free virtual = 4948
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 1037 ; free virtual = 4948
+INFO: [Common 17-1381] The checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/red_pitaya_top_opt.dcp' has been generated.
+Command: report_drc -file red_pitaya_top_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/red_pitaya_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC CKLD-2] Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads: Clock net sata_clk_in is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): i_clk_s/O
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 1026 ; free virtual = 4940
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 86dd073e
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 1026 ; free virtual = 4940
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 1032 ; free virtual = 4946
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10219b188
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 1011 ; free virtual = 4928
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 127e479fa
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 980 ; free virtual = 4900
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 127e479fa
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 980 ; free virtual = 4900
+Phase 1 Placer Initialization | Checksum: 127e479fa
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2324.152 ; gain = 0.000 ; free physical = 980 ; free virtual = 4900
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 16b848bde
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:33 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 968 ; free virtual = 4890
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 16b848bde
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:33 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 968 ; free virtual = 4890
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1207e30b7
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:38 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 964 ; free virtual = 4886
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 12f198071
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:38 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 964 ; free virtual = 4886
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: cb41c93f
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:38 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 964 ; free virtual = 4886
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 110bfda7d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:39 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 963 ; free virtual = 4886
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: c47d917c
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:40 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 963 ; free virtual = 4886
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 1ebe9acba
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:46 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 958 ; free virtual = 4881
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 2184eacd7
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:46 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 958 ; free virtual = 4881
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 2184eacd7
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:47 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 958 ; free virtual = 4881
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: f5fd9272
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:50 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 960 ; free virtual = 4883
+Phase 3 Detail Placement | Checksum: f5fd9272
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:50 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 961 ; free virtual = 4884
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19c87109c
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Place 46-38] Processed net i_scope/i_dfilt1_chb/aa_mult_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-41] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19c87109c
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:55 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 958 ; free virtual = 4881
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.216. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 284891e74
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:12 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 955 ; free virtual = 4879
+Phase 4.1 Post Commit Optimization | Checksum: 284891e74
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:12 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 955 ; free virtual = 4879
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 284891e74
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:12 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 955 ; free virtual = 4879
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 284891e74
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:12 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 955 ; free virtual = 4879
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 19413c0d7
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:13 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 955 ; free virtual = 4879
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19413c0d7
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:13 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 955 ; free virtual = 4879
+Ending Placer Task | Checksum: 9875a082
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:13 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 964 ; free virtual = 4889
+69 Infos, 13 Warnings, 10 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:11 ; elapsed = 00:01:16 . Memory (MB): peak = 2336.156 ; gain = 12.004 ; free physical = 964 ; free virtual = 4889
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 943 ; free virtual = 4886
+INFO: [Common 17-1381] The checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/red_pitaya_top_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 948 ; free virtual = 4877
+report_utilization: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 955 ; free virtual = 4885
+report_control_sets: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 955 ; free virtual = 4885
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 97d836d0 ConstDB: 0 ShapeSum: 9d69b2 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1b8a0feb7
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 871 ; free virtual = 4802
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1b8a0feb7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 873 ; free virtual = 4804
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1b8a0feb7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 859 ; free virtual = 4791
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1b8a0feb7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 859 ; free virtual = 4791
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 21331886f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 840 ; free virtual = 4773
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.344 | TNS=-89.640| WHS=-0.358 | THS=-331.628|
+
+Phase 2 Router Initialization | Checksum: 2bff6a80b
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:23 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 840 ; free virtual = 4773
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 15a1efda4
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:30 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 837 ; free virtual = 4770
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1493
+ Number of Nodes with overlaps = 172
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.327 | TNS=-227.618| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1d8ea6b84
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 834 ; free virtual = 4767
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 82
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.277 | TNS=-195.702| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2397b3b4b
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:56 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 833 ; free virtual = 4766
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.270 | TNS=-188.995| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1bb50b3e7
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:01 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 835 ; free virtual = 4769
+Phase 4 Rip-up And Reroute | Checksum: 1bb50b3e7
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:01 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 835 ; free virtual = 4769
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: eadf5846
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:02 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 835 ; free virtual = 4769
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.121 | TNS=-167.262| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 124bcdb5c
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:15 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 817 ; free virtual = 4751
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 124bcdb5c
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:15 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 817 ; free virtual = 4751
+Phase 5 Delay and Skew Optimization | Checksum: 124bcdb5c
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:15 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 817 ; free virtual = 4751
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1c987b959
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:16 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 818 ; free virtual = 4752
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.121 | TNS=-158.018| WHS=-2.164 | THS=-58.870|
+
+Phase 6.1 Hold Fix Iter | Checksum: 1810e0569
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:16 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 818 ; free virtual = 4752
+Phase 6 Post Hold Fix | Checksum: f6a5de0c
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:16 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 818 ; free virtual = 4752
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 12.8846 %
+  Global Horizontal Routing Utilization  = 13.7259 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 60.3604%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
+Phase 7 Route finalize | Checksum: d65e05a3
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:17 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 818 ; free virtual = 4752
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: d65e05a3
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:17 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 818 ; free virtual = 4752
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 115f34549
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:01:18 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 816 ; free virtual = 4750
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1f007003b
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:19 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 816 ; free virtual = 4750
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.121 | TNS=-158.018| WHS=-2.164 | THS=-58.870|
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1f007003b
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:19 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 816 ; free virtual = 4750
+WARNING: [Route 35-426] Router was unable to fix hold violation on unroutable pins. The router cannot add routing detours to improve hold time because the pins are part of one or more of the following unroutable types: partition pins, fixed routes and intra-site connections.
+Resolution: Run report_timing_summary to analyze the hold violations.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:19 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 858 ; free virtual = 4791
+
+Routing Is Done.
+83 Infos, 15 Warnings, 10 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:14 ; elapsed = 00:01:23 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 858 ; free virtual = 4791
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2336.156 ; gain = 0.000 ; free physical = 833 ; free virtual = 4790
+INFO: [Common 17-1381] The checkpoint '/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/red_pitaya_top_routed.dcp' has been generated.
+Command: report_drc -file red_pitaya_top_drc_routed.rpt -pb red_pitaya_top_drc_routed.pb -rpx red_pitaya_top_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/red_pitaya_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 2369.176 ; gain = 33.020 ; free physical = 830 ; free virtual = 4769
+Command: report_methodology -file red_pitaya_top_methodology_drc_routed.rpt -rpx red_pitaya_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/paul/developing/workspace/RedPitaya/Paul/labcontrol/fpga/redpitaya.runs/impl_1/red_pitaya_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2369.176 ; gain = 0.000 ; free physical = 752 ; free virtual = 4693
+Command: report_power -file red_pitaya_top_power_routed.rpt -pb red_pitaya_top_power_summary_routed.pb -rpx red_pitaya_top_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for i_DNA
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+91 Infos, 16 Warnings, 10 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2369.176 ; gain = 0.000 ; free physical = 722 ; free virtual = 4668
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  6 14:36:50 2017...

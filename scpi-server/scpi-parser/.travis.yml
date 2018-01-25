@@ -1,0 +1,11 @@
+addons:
+  apt:
+    packages:
+    - libcunit1-dev
+    - clang
+
+sudo: false
+
+script:
+    - make
+    - CC=clang CFLAGS="-g -O0 -fsanitize=address" LDFLAGS="-g -fsanitize=address" make clean test

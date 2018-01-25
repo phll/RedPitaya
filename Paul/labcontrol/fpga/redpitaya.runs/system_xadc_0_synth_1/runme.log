@@ -1,0 +1,117 @@
+
+*** Running vivado
+    with args -log system_xadc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xadc_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_xadc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1191.449 ; gain = 69.996 ; free physical = 121 ; free virtual = 6119
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_axi_xadc' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0_axi_xadc.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_axi_lite_ipif' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_axi_lite_ipif.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_slave_attachment' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_slave_attachment.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_address_decoder' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_address_decoder.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized0' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized0' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized1' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized1' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized2' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized2' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized3' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized3' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized4' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized4' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized5' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized5' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized6' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized6' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized7' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized7' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized8' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized8' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized9' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized9' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized10' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized10' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized11' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized11' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized12' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized12' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized13' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized13' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized14' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized14' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized15' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized15' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized16' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized16' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized17' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized17' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized18' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized18' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized19' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized19' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized20' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized20' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized21' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized21' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized22' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized22' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized23' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized23' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized24' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized24' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_pselect_f__parameterized25' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_pselect_f__parameterized25' (1#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_address_decoder' (2#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_address_decoder.vhd:176]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_slave_attachment' (3#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_slave_attachment.vhd:227]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_axi_lite_ipif' (4#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_0_axi_lite_ipif.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_xadc_core_drp' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0_xadc_core_drp.vhd:194]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_xadc_core_drp' (5#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0_xadc_core_drp.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_soft_reset' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_soft_reset.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_soft_reset' (6#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_0_soft_reset.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_0_interrupt_control' [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_0_interrupt_control.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_interrupt_control' (7#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_0_interrupt_control.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0_axi_xadc' (8#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0_axi_xadc.vhd:246]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_0' (9#1) [/home/paul/developing/workspace/RedPitaya/Paul/labcontrol/src/fpga/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.v:53]
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1261.949 ; gain = 140.496 ; free physical = 225 ; free virtual = 5672
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1261.949 ; gain = 140.496 ; free physical = 191 ; free virtual = 5638
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1589.340 ; gain = 0.000 ; free physical = 143 ; free virtual = 5297
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 1589.340 ; gain = 467.887 ; free physical = 120 ; free virtual = 4892
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1589.340 ; gain = 467.887 ; free physical = 104 ; free virtual = 4881
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1589.340 ; gain = 467.887 ; free physical = 123 ; free virtual = 4890
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:58 . Memory (MB): peak = 1589.340 ; gain = 467.887 ; free physical = 103 ; free virtual = 4881
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:14 . Memory (MB): peak = 1589.340 ; gain = 467.887 ; free physical = 264 ; free virtual = 4574
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:28 . Memory (MB): peak = 1589.340 ; gain = 467.887 ; free physical = 132 ; free virtual = 4321
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:29 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 132 ; free virtual = 4326
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:29 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 132 ; free virtual = 4326
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 128 ; free virtual = 4325
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 128 ; free virtual = 4325
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 127 ; free virtual = 4324
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 127 ; free virtual = 4324
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 127 ; free virtual = 4324
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 127 ; free virtual = 4324
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    37|
+|3     |LUT3 |    23|
+|4     |LUT4 |    21|
+|5     |LUT5 |    50|
+|6     |LUT6 |    63|
+|7     |XADC |     1|
+|8     |FDRE |   205|
+|9     |FDSE |    30|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1605.348 ; gain = 483.895 ; free physical = 127 ; free virtual = 4324
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:34 . Memory (MB): peak = 1605.355 ; gain = 496.488 ; free physical = 363 ; free virtual = 4575

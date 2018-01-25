@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.2)  20 JUN 2016 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.2)  23 FEB 2017 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,7 +878,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(../lock/Makefile)
+(./example-makefile)
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 70.
 Package babel Info: Redefining german shorthand "|
@@ -923,53 +923,53 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 100.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 100.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 100.
  [5]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 129.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 129.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 129.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 137.
  [6]
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 163.
 [7]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 166.
@@ -981,17 +981,17 @@ Package babel Info: Redefining german shorthand "~
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 12.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 28.
  [8]) (../web-apps/stabilizer/src/Makefile)
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 181.
@@ -1018,7 +1018,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 185.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 185.
- <stabilizer.png, id=268, 1234.6125pt x 1059.96pt>
+ <stabilizer.png, id=204, 1234.6125pt x 1059.96pt>
 File: stabilizer.png Graphic file (type png)
  <use stabilizer.png>
 Package pdftex.def Info: stabilizer.png used on input line 188.
@@ -1364,15 +1364,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
  (./RedPitaya.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
-Package rerunfilecheck Info: File `RedPitaya.out' has not changed.
-(rerunfilecheck)             Checksum: C467DFB9B7C7BEACD24F3ECABB99836F;1151.
+
+
+Package rerunfilecheck Warning: File `RedPitaya.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `RedPitaya.out':
+(rerunfilecheck)             Before: 0AF34C63E65B32A409EC32FCDE780FFE;269
+(rerunfilecheck)             After:  C467DFB9B7C7BEACD24F3ECABB99836F;1151.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 11264 strings out of 494860
- 162419 string characters out of 6177603
- 440107 words of memory out of 5000000
- 14079 multiletter control sequences out of 15000+600000
+ 11247 strings out of 494860
+ 162182 string characters out of 6177603
+ 440094 words of memory out of 5000000
+ 14067 multiletter control sequences out of 15000+600000
  15538 words of font info for 62 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  41i,8n,52p,1332b,1946s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1388,10 +1395,10 @@ msfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 .pfb>
-Output written on RedPitaya.pdf (17 pages, 307183 bytes).
+Output written on RedPitaya.pdf (17 pages, 304635 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 545 compressed objects within 6 object streams
- 322 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 317 named destinations out of 1000 (max. 500000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
