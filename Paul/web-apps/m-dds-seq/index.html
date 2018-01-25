@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.canvasjs.min.js"></script>
+    <script type="text/javascript" src="canvasjs.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="custom.min.js"></script>
+    <script type="text/javascript" src="math.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="custom.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Multi DDS Sequencer</title>
+</head>
+<body>
+<header class="fullWidth">
+  <a id="btn-exit" class="pull-left" href="/index.html"><span class="fa fa-chevron-left"></span></a>
+  <img class="logo" src="logo_white.png">
+  <h1 class="title">Multi DDS Sequencer</h1>
+  <div class="btn-toolbar header-toolbar">
+    <input id="testInput" type="text">
+    <div class="btn-group">
+      <button id="leaveAwake" class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Leave without killing the application"><i class="fa fa-sign-out"></i></button>
+    </div>
+    <div class="btn-group">
+        <button id="send-data" class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Send sequences to RedPitaya"><i class="fa fa-send"></i></button>
+        <button id="softwareTrigger" class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Send a software trigger"><i class="fa fa-play-circle-o"></i></button>
+        <button id="phaseReset" class="btn btn-dark header-btn active" type="button" data-toggle="tooltip" data-placement="bottom" title="Continuous phase at sequence start"><i class="fa fa-spinner"></i></button>
+    </div>
+    <div class="btn-group">
+      <button id="upload" class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Load sequences from RedPitaya"><i class="fa fa-upload"></i></button>
+      <button id="download" class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Store sequences on RedPitaya"><i class="fa fa-download"></i></button>
+      <button class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Load sequences from local machine. Hasn't been implemented, yet"><i class="fa fa-folder-open"></i></button>
+      <button class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Save sequences on local machine. Hasn't been implemented, yet"><i class="fa fa-save"></i></button>
+    </div>
+    <div class="btn-group">
+      <button id="refresh" class="btn btn-dark header-btn" type="button" data-toggle="tooltip" data-placement="bottom" title="Update edits"><i class="fa fa-refresh"></i></button>
+    </div>
+  </div>
+</header>
+<div class="container body">
+<div class="main_container">
+  <div class="row">
+      <div style="width:50%" class="col-md-6 col-sm-6 col-xs-12">
+          <div class="x_panel">
+              <div class="x_title chartHeader">
+                  <h2><i class="fa fa-line-chart"></i> Amplitudes</h2>
+                  <ul class="nav navbar-right panel_toolbox" style="min-width:22px">
+                      <li>
+                        <div class="btn-toolbar">
+                          <div class="btn-group">
+                            <button id="ampZoom" class="btn btn-dark active" type="button" data-toggle="tooltip" data-placement="bottom" title="Zoom"><i class="fa fa-search-plus"></i></button>
+                            <button id="ampPan" class="btn btn-dark" type="button" data-toggle="tooltip" data-placement="bottom" title="Pan"><i class="fa fa-arrows"></i></button>
+                          </div>
+                          <div class="btn-group">
+                            <button id="ampReset" class="btn btn-dark" type="button" data-toggle="tooltip" data-placement="bottom" title="Reset Zoom"><i class="fa fa-arrows-alt"></i></button>
+                          </div>
+                        </div>
+                      </li>
+                  </ul>
+                  <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="btn-toolbar dds-toolbar" >
+                  <div class="btn-group">
+                    <button id="dds1-as" class="btn btn-info btn-1 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS1</button>
+                    <button id="dds2-as" class="btn btn-info btn-2 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS2</button>
+                    <button id="dds3-as" class="btn btn-info btn-3 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS3</button>
+                    <button id="dds4-as" class="btn btn-info btn-4 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS4</button>
+                    <button id="dds5-as" class="btn btn-info btn-5 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS5</button>
+                    <button id="dds6-as" class="btn btn-info btn-6 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS6</button>
+                    <button id="dds7-as" class="btn btn-info btn-7 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS7</button>
+                    <button id="dds8-as" class="btn btn-info btn-8 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS8</button>
+                    <button id="dds9-as" class="btn btn-info btn-9 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS9</button>
+                    <button id="dds10-as" class="btn btn-info btn-10 dds-select dds-as active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS10</button>
+                  </div>
+                </div>
+                <div id="amplContainer" class="plotContainer"></div>
+              </div>
+          </div>
+      </div>
+      <div style="width:50%" class="col-md-6 col-sm-6 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title chartHeader">
+                <h2><i class="fa fa-line-chart"></i> Frequencies</h2>
+                <ul class="nav navbar-right panel_toolbox" style="min-width:22px">
+                    <li>
+                      <div class="btn-toolbar">
+                        <div class="btn-group">
+                          <button id="freqZoom" class="btn btn-dark active" type="button" data-toggle="tooltip" data-placement="bottom" title="Zoom"><i class="fa fa-search-plus"></i></button>
+                          <button id="freqPan" class="btn btn-dark" type="button" data-toggle="tooltip" data-placement="bottom" title="Pan"><i class="fa fa-arrows"></i></button>
+                        </div>
+                        <div class="btn-group">
+                          <button id="freqReset" class="btn btn-dark" type="button" data-toggle="tooltip" data-placement="bottom" title="Reset Zoom"><i class="fa fa-arrows-alt"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+              <div class="btn-toolbar dds-toolbar" >
+                <div class="btn-group">
+                  <button id="dds1-fs" class="btn btn-info btn-1 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS1</button>
+                  <button id="dds2-fs" class="btn btn-info btn-2 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS2</button>
+                  <button id="dds3-fs" class="btn btn-info btn-3 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS3</button>
+                  <button id="dds4-fs" class="btn btn-info btn-4 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS4</button>
+                  <button id="dds5-fs" class="btn btn-info btn-5 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS5</button>
+                  <button id="dds6-fs" class="btn btn-info btn-6 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS6</button>
+                  <button id="dds7-fs" class="btn btn-info btn-7 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS7</button>
+                  <button id="dds8-fs" class="btn btn-info btn-8 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS8</button>
+                  <button id="dds9-fs" class="btn btn-info btn-9 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS9</button>
+                  <button id="dds10-fs" class="btn btn-info btn-10 dds-select dds-fs active" type="button" data-toggle="tooltip" data-placement="bottom" title="Hide/Show DDSi sequence">DDS10</button>
+                </div>
+              </div>
+              <div id="freqContainer" class="plotContainer"></div>
+            </div>
+        </div>
+      </div>
+  <div class="clearfix"></div>
+</div>
+<div class="row">
+    <div style="width:25%" class="col-md-6 col-sm-6 col-xs-12">
+      <div class="x_panel">
+        <div class="x_title">
+          <h2><i class="fa fa-table"></i> Sequences data (1,5)</h2>
+          <ul class="nav navbar-right panel_toolbox" style="min-width:22px; margin-top:5px">
+            <li>
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <button class="btn btn-dark dds-select" type="button" id="add15" data-toggle="tooltip" data-placement="bottom" title="add data fields"><i class="fa fa-plus" style="margin-top:2px"></i></button>
+                  <button class="btn btn-dark dds-select" type="button" id="refresh15" data-toggle="tooltip" data-placement="bottom" title="update edits of currently chosen sequence"><i class="fa fa-refresh" style="margin-top:2px"></i></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+          <div role="tabpanel" data-example-id="togglable-tabs">
+
+            <ul class="nav nav-tabs bar-taps" role="tablist">
+              <li id="dds1-tab" role="presentation" class="active"><a href="#dds1-tab-content" data-toggle="tab" role="tab" aria-expanded="true">DDS1</a>
+              </li>
+              <li id="dds5-tab" role="presentation" ><a href="#dds5-tab-content" data-toggle="tab" role="tab" aria-expanded="false">DDS5</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="dds1-tab-content" role="tabpanel" class="tab-pane fade active in" aria-labelledby="dds1-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds1_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+              <div id="dds5-tab-content" role="tabpanel" class="tab-pane fade " aria-labelledby="dds5-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds5_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width:25%" class="col-md-6 col-sm-6 col-xs-12">
+      <div class="x_panel">
+        <div class="x_title">
+          <h2><i class="fa fa-table"></i> Sequences data (2,6)</h2>
+          <ul class="nav navbar-right panel_toolbox" style="min-width:22px; margin-top:5px">
+            <li>
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <button class="btn btn-dark dds-select" type="button" id="add26" data-toggle="tooltip" data-placement="bottom" title="add data fields"><i class="fa fa-plus" style="margin-top:2px"></i></button>
+                  <button class="btn btn-dark dds-select" type="button" id="refresh26" data-toggle="tooltip" data-placement="bottom" title="update edits of currently chosen sequence"><i class="fa fa-refresh" style="margin-top:2px"></i></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+          <div role="tabpanel" data-example-id="togglable-tabs">
+
+            <ul class="nav nav-tabs bar-taps" role="tablist">
+              <li id="dds2-tab" role="presentation" class="active"><a href="#dds2-tab-content" data-toggle="tab" role="tab" aria-expanded="true">DDS2</a>
+              </li>
+              <li id="dds6-tab" role="presentation" ><a href="#dds6-tab-content" data-toggle="tab" role="tab" aria-expanded="false">DDS6</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="dds2-tab-content" role="tabpanel" class="tab-pane fade active in" aria-labelledby="dds2-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds2_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+              <div id="dds6-tab-content" role="tabpanel" class="tab-pane fade " aria-labelledby="dds6-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds6_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width:25%" class="col-md-6 col-sm-6 col-xs-12">
+      <div class="x_panel">
+        <div class="x_title">
+          <h2><i class="fa fa-table"></i> Sequences data (3,7,8)</h2>
+          <ul class="nav navbar-right panel_toolbox" style="min-width:22px; margin-top:5px">
+            <li>
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <button class="btn btn-dark dds-select" type="button" id="add378" data-toggle="tooltip" data-placement="bottom" title="add data fields"><i class="fa fa-plus" style="margin-top:2px"></i></button>
+                  <button class="btn btn-dark dds-select" type="button" id="refresh378" data-toggle="tooltip" data-placement="bottom" title="update edits of currently chosen sequence"><i class="fa fa-refresh" style="margin-top:2px"></i></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+          <div role="tabpanel" data-example-id="togglable-tabs">
+
+            <ul class="nav nav-tabs bar-taps" role="tablist">
+              <li id="dds3-tab" role="presentation" class="active"><a href="#dds3-tab-content" data-toggle="tab" role="tab" aria-expanded="true">DDS3</a>
+              </li>
+              <li id="dds7-tab" role="presentation" ><a href="#dds7-tab-content" data-toggle="tab" role="tab" aria-expanded="false">DDS7</a>
+              </li>
+              <li id="dds8-tab" role="presentation" ><a href="#dds8-tab-content" data-toggle="tab" role="tab" aria-expanded="false">DDS8</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="dds3-tab-content" role="tabpanel" class="tab-pane fade active in" aria-labelledby="dds3-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds3_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+              <div id="dds7-tab-content" role="tabpanel" class="tab-pane fade " aria-labelledby="dds7-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds7_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+              <div id="dds8-tab-content" role="tabpanel" class="tab-pane fade " aria-labelledby="dds8-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds8_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width:25%" class="col-md-6 col-sm-6 col-xs-12">
+      <div class="x_panel">
+        <div class="x_title">
+          <h2><i class="fa fa-table"></i> Sequences data (4,9,10)</h2>
+          <ul class="nav navbar-right panel_toolbox" style="min-width:22px; margin-top:5px">
+            <li>
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <button class="btn btn-dark dds-select" type="button" id="add4910" data-toggle="tooltip" data-placement="bottom" title="add data fields"><i class="fa fa-plus" style="margin-top:2px"></i></button>
+                  <button class="btn btn-dark dds-select" type="button" id="refresh4910" data-toggle="tooltip" data-placement="bottom" title="update edits of currently chosen sequence"><i class="fa fa-refresh" style="margin-top:2px"></i></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+          <div role="tabpanel" data-example-id="togglable-tabs">
+
+            <ul class="nav nav-tabs bar-taps" role="tablist">
+              <li id="dds4-tab" role="presentation" class="active"><a href="#dds4-tab-content" data-toggle="tab" role="tab" aria-expanded="true">DDS4</a>
+              </li>
+              <li id="dds9-tab" role="presentation" ><a href="#dds9-tab-content" data-toggle="tab" role="tab" aria-expanded="false">DDS9</a>
+              </li>
+              <li id="dds10-tab" role="presentation" ><a href="#dds10-tab-content" data-toggle="tab" role="tab" aria-expanded="false">DDS10</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="dds4-tab-content" role="tabpanel" class="tab-pane fade active in" aria-labelledby="dds4-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds4_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+              <div id="dds9-tab-content" role="tabpanel" class="tab-pane fade " aria-labelledby="dds9-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds9_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+              <div id="dds10-tab-content" role="tabpanel" class="tab-pane fade " aria-labelledby="dds10-tab">
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>Amplitude</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dds10_tb">
+                      <tr>
+                        <td><input type="text" class="form-control time"></td>
+                        <td><input type="text" class="form-control amp"></td>
+                        <td><input type="text" class="form-control freq"></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal_err" class="modal" tabindex="-1" role="dialog" aria-labelledby="modal_err_label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal_err_label">Application error</h4>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-close-modal" id="btn_ignore">Ignore</button>
+          <button type="button" class="btn btn-default" id="btn_retry_get">Retry</button>
+          <button type="button" class="btn btn-primary btn-app-restart">Restart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

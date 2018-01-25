@@ -75,5 +75,8 @@ int rp_get_signals(float ***s, int *sig_num, int *sig_len)
 {
 	time(&timer);
 	fprintf(stderr, "app get signals \t%s \n",ctime(&timer));
+	if(*s == NULL)
+    return -1;
+  *sig_len = 0;
   return 0;
 }

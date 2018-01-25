@@ -1,0 +1,2030 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Mar  7 16:25:27 2017
+# Process ID: 12037
+# Current directory: /home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.runs/synth_1
+# Command line: vivado -log red_pitaya_top.vds -mode batch -messageDb vivado.pb -notrace -source red_pitaya_top.tcl
+# Log file: /home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.runs/synth_1/red_pitaya_top.vds
+# Journal file: /home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source red_pitaya_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_processing_system7_0_0
+
+Command: synth_design -top red_pitaya_top -part xc7z010clg400-1 -flatten_hierarchy none -bufg 16 -keep_equivalent_registers
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1046.422 ; gain = 204.723 ; free physical = 650 ; free virtual = 6264
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_top' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:75]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:17333]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:17333]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_ps' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_ps.v:46]
+INFO: [Synth 8-638] synthesizing module 'axi_master' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/axi_master.v:13]
+	Parameter DW bound to: 64 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter ID bound to: 0 - type: integer 
+	Parameter IW bound to: 6 - type: integer 
+	Parameter LW bound to: 4 - type: integer 
+	Parameter SW bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_master' (2#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/axi_master.v:13]
+INFO: [Synth 8-638] synthesizing module 'axi_slave' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/axi_slave.v:52]
+	Parameter AXI_DW bound to: 32 - type: integer 
+	Parameter AXI_AW bound to: 32 - type: integer 
+	Parameter AXI_IW bound to: 12 - type: integer 
+	Parameter AXI_SW bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_slave' (3#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/axi_slave.v:52]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (4#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/hdl/system_wrapper.v:3]
+INFO: [Synth 8-638] synthesizing module 'system' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/hdl/system.v:4]
+INFO: [Synth 8-638] synthesizing module 'GND' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:4827]
+INFO: [Synth 8-256] done synthesizing module 'GND' (5#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:4827]
+INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_3_processing_system7' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:153]
+	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
+	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
+	Parameter C_M_AXI_GP0_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP0_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_GP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_GP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP2_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP3_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_ACP_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_S_AXI_HP0_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP1_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP2_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP3_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_ACP_TRANS_CHECK bound to: 0 - type: integer 
+	Parameter C_NUM_F2P_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_FCLK_CLK0_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK1_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK2_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK3_BUF bound to: true - type: string 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
+	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
+	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
+	Parameter USE_TRACE_DATA_EDGE_DETECTOR bound to: 0 - type: integer 
+	Parameter C_PS7_SI_REV bound to: PRODUCTION - type: string 
+	Parameter C_EN_EMIO_ENET0 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_ENET1 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_TRACE bound to: 0 - type: integer 
+	Parameter C_DQ_WIDTH bound to: 32 - type: integer 
+	Parameter C_DQS_WIDTH bound to: 4 - type: integer 
+	Parameter C_DM_WIDTH bound to: 4 - type: integer 
+	Parameter C_MIO_PRIMITIVE bound to: 54 - type: integer 
+	Parameter C_PACKAGE_NAME bound to: clg400 - type: string 
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (6#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:33163]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (7#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:33163]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TX_EN in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:210]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TX_ER in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:211]
+WARNING: [Synth 8-3848] Net ENET0_GMII_TXD in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:227]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TX_EN in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:241]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TX_ER in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:242]
+WARNING: [Synth 8-3848] Net ENET1_GMII_TXD in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:256]
+WARNING: [Synth 8-3848] Net ENET0_GMII_COL_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1033]
+WARNING: [Synth 8-3848] Net ENET0_GMII_CRS_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1034]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RXD_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1037]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RX_DV_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1035]
+WARNING: [Synth 8-3848] Net ENET0_GMII_RX_ER_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1036]
+WARNING: [Synth 8-3848] Net ENET1_GMII_COL_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1042]
+WARNING: [Synth 8-3848] Net ENET1_GMII_CRS_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1043]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RXD_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1046]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RX_DV_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1044]
+WARNING: [Synth 8-3848] Net ENET1_GMII_RX_ER_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1045]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_ATID_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1055]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_DATA_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1053]
+WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_system7_v5_3_processing_system7 does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:1054]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_3_processing_system7' (8#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v:153]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_3_processing_system7' requires 673 connections, but only 660 given [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:639]
+INFO: [Synth 8-256] done synthesizing module 'system_processing_system7_0_0' (9#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'system_processing_system7_0_0' requires 181 connections, but only 168 given [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/hdl/system.v:625]
+INFO: [Synth 8-256] done synthesizing module 'system' (10#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/hdl/system.v:4]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (11#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/hdl/system_wrapper.v:3]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_ps' (12#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_ps.v:46]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_analog' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_analog.v:64]
+	Parameter PWM_FULL bound to: 8'b10011100 
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14160]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (13#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14160]
+INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:32655]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: -45.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV' (14#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:32655]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25287]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (15#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25287]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_analog' (16#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_analog.v:64]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_hk' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_hk.v:35]
+INFO: [Synth 8-638] synthesizing module 'DNA_PORT' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3033]
+	Parameter SIM_DNA_VALUE bound to: 57'b010000010001101000101011001111000100110101011110011011110 
+INFO: [Synth 8-256] done synthesizing module 'DNA_PORT' (17#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3033]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_hk' (18#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_hk.v:35]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_pid' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:16]
+	Parameter AnalogInterfaceWidth bound to: 14 - type: integer 
+	Parameter nDDSfreqs bound to: 10 - type: integer 
+	Parameter maxevents bound to: 1024 - type: integer 
+	Parameter OutputWidth bound to: 14 - type: integer 
+	Parameter DDS_CHANNEL_OFFSET bound to: 0 - type: integer 
+	Parameter DDSawaittrigger_OFFSET bound to: 24 - type: integer 
+	Parameter DDSsoftwaretrigger_OFFSET bound to: 25 - type: integer 
+	Parameter phase_reset_OFFSET bound to: 26 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DDS_machine' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:257]
+	Parameter maxevents bound to: 1024 - type: integer 
+	Parameter EVENTRAMwidth bound to: 10 - type: integer 
+	Parameter OutputWidth bound to: 14 - type: integer 
+	Parameter DDSftw_IF_OFFSET bound to: 1 - type: integer 
+	Parameter DDSsamples_OFFSET bound to: 2 - type: integer 
+	Parameter DDSamp_IF_OFFSET bound to: 3 - type: integer 
+	Parameter DDSfreqs_OFFSET bound to: 40 - type: integer 
+	Parameter DDScycles_OFFSET bound to: 2088 - type: integer 
+	Parameter DDSamps_OFFSET bound to: 3112 - type: integer 
+	Parameter DDSamps_last_OFFSET bound to: 5159 - type: integer 
+	Parameter DDSindbits bound to: 32 - type: integer 
+	Parameter DDSfracbits bound to: 24 - type: integer 
+	Parameter DDSDataWidth bound to: 14 - type: integer 
+	Parameter SineWidth bound to: 14 - type: integer 
+	Parameter SineDepth bound to: 256 - type: integer 
+	Parameter SineTableAddrBits bound to: 8 - type: integer 
+	Parameter DDSamp_fracbits bound to: 14 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'sinetable256x14bit.txt' is read successfully [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:341]
+INFO: [Synth 8-638] synthesizing module 'bram_tdp' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:214]
+	Parameter DATA bound to: 142 - type: integer 
+	Parameter ADDR bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bram_tdp' (19#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:214]
+WARNING: [Synth 8-689] width (20) of port connection 'a_addr' does not match port width (10) of module 'bram_tdp' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-689] width (16) of port connection 'b_addr' does not match port width (10) of module 'bram_tdp' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-350] instance 'DDS_mem' of module 'bram_tdp' requires 10 connections, but only 8 given [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+INFO: [Synth 8-256] done synthesizing module 'DDS_machine' (20#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:257]
+INFO: [Synth 8-638] synthesizing module 'bus_clk_bridge' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/bus_clk_bridge.v:38]
+INFO: [Synth 8-256] done synthesizing module 'bus_clk_bridge' (21#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/bus_clk_bridge.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[9].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[8].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[7].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[6].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[5].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[4].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[3].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[2].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[1].SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'SumDataA_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:113]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[9].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[8].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[7].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[6].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[5].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[4].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[3].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[2].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'genblk2[1].SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:123]
+WARNING: [Synth 8-3936] Found unconnected internal register 'SumDataB_reg' and it is trimmed from '24' to '14' bits. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:114]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_pid' (22#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:16]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_ams' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_ams.v:47]
+INFO: [Synth 8-638] synthesizing module 'XADC' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:44655]
+	Parameter INIT_40 bound to: 16'b0000000000000000 
+	Parameter INIT_41 bound to: 16'b0010111100001111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0100111111100000 
+	Parameter INIT_49 bound to: 16'b0000001100000011 
+	Parameter INIT_4A bound to: 16'b0100011111100000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000100000000000 
+	Parameter INIT_4D bound to: 16'b0000001100000011 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0101010101010101 
+	Parameter INIT_5A bound to: 16'b1001100110011001 
+	Parameter INIT_5B bound to: 16'b0110101010101010 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0101000100010001 
+	Parameter INIT_5E bound to: 16'b1001000111101011 
+	Parameter INIT_5F bound to: 16'b0110011001100110 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: ../../../../code/bench/xadc_sim_values.txt - type: string 
+INFO: [Synth 8-256] done synthesizing module 'XADC' (23#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:44655]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_ams' (24#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_ams.v:47]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_daisy' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy.v:57]
+INFO: [Synth 8-638] synthesizing module 'OBUFDS' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:21923]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DIFF_SSTL18_I - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-256] done synthesizing module 'OBUFDS' (25#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:21923]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_daisy_tx' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy_tx.v:45]
+INFO: [Synth 8-638] synthesizing module 'ODDR__parameterized0' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25287]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ODDR__parameterized0' (25#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25287]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25860]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2' (26#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25860]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_daisy_tx' (27#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy_tx.v:45]
+INFO: [Synth 8-638] synthesizing module 'IBUFGDS' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14583]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DIFF_SSTL18_I - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFGDS' (28#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14583]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS__parameterized0' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14160]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DIFF_SSTL18_I - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS__parameterized0' (28#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14160]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_daisy_rx' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy_rx.v:54]
+INFO: [Synth 8-638] synthesizing module 'BUFIO' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-256] done synthesizing module 'BUFIO' (29#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-638] synthesizing module 'BUFR' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:884]
+	Parameter BUFR_DIVIDE bound to: 2 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-256] done synthesizing module 'BUFR' (30#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:884]
+INFO: [Synth 8-638] synthesizing module 'ISERDESE2' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:19667]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'ISERDESE2' (31#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:19667]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_daisy_rx' (32#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy_rx.v:54]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_daisy_test' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy_test.v:46]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_daisy_test' (33#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy_test.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy.v:297]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_daisy' (34#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy.v:57]
+INFO: [Synth 8-638] synthesizing module 'red_pitaya_test' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_test.v:31]
+	Parameter M bound to: 2 - type: integer 
+	Parameter K bound to: 3 - type: integer 
+	Parameter F bound to: 6 - type: integer 
+	Parameter S bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_test' (35#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_test.v:31]
+WARNING: [Synth 8-3848] Net axi0_clk in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:189]
+WARNING: [Synth 8-3848] Net axi0_rstn in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:190]
+WARNING: [Synth 8-3848] Net axi0_waddr in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:191]
+WARNING: [Synth 8-3848] Net axi0_wdata in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:192]
+WARNING: [Synth 8-3848] Net axi0_wsel in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:193]
+WARNING: [Synth 8-3848] Net axi0_wvalid in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:194]
+WARNING: [Synth 8-3848] Net axi0_wlen in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:195]
+WARNING: [Synth 8-3848] Net axi0_wfixed in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:196]
+WARNING: [Synth 8-3848] Net axi1_clk in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:202]
+WARNING: [Synth 8-3848] Net axi1_rstn in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:203]
+WARNING: [Synth 8-3848] Net axi1_waddr in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:204]
+WARNING: [Synth 8-3848] Net axi1_wdata in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:205]
+WARNING: [Synth 8-3848] Net axi1_wsel in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:206]
+WARNING: [Synth 8-3848] Net axi1_wvalid in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:207]
+WARNING: [Synth 8-3848] Net axi1_wlen in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:208]
+WARNING: [Synth 8-3848] Net axi1_wfixed in module/entity red_pitaya_top does not have driver. [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:209]
+INFO: [Synth 8-256] done synthesizing module 'red_pitaya_top' (36#1) [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_top.v:75]
+WARNING: [Synth 8-3917] design red_pitaya_top has port adc_clk_o[1] driven by constant 1
+WARNING: [Synth 8-3917] design red_pitaya_top has port adc_clk_o[0] driven by constant 0
+WARNING: [Synth 8-3917] design red_pitaya_top has port adc_cdcs_o driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1100.906 ; gain = 259.207 ; free physical = 592 ; free virtual = 6208
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[141] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[140] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[139] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[138] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[137] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[136] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[135] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[134] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[133] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[132] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[131] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[130] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[129] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[128] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[127] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[126] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[125] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[124] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[123] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[122] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[121] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[120] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[119] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[118] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[117] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[116] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[115] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[114] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[113] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[112] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[111] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[110] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[109] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[108] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[107] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[106] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[105] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[104] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[103] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[102] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[101] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[100] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[99] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[98] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[97] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[96] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[95] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[94] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[93] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[92] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[91] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[90] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[89] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[88] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[87] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[86] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[85] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[84] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[83] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[82] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[81] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[80] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[79] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[78] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[77] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[76] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[75] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[74] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[73] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[72] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[71] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[70] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[69] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[68] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[67] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[66] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[65] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[64] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[63] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[62] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[61] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[60] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[59] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[58] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[57] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[56] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[55] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[54] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[53] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[52] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[51] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[50] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[49] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[48] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[47] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[46] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[45] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[44] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[43] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+WARNING: [Synth 8-3295] tying undriven pin DDS_mem:b_din[42] to constant 0 [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_pid.v:344]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1100.906 ; gain = 259.207 ; free physical = 591 ; free virtual = 6208
+---------------------------------------------------------------------------------
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'i_ams/XADC_inst' of type 'XADC' is '7SERIES'; it is being changed to match the current FPGA architecture, 'ZYNQ'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'i_ps/system_i/system_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'i_ps/system_i/system_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/red_pitaya_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/red_pitaya_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/constrs_1/imports/code/red_pitaya.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/constrs_1/imports/code/red_pitaya.xdc:265]
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/constrs_1/imports/code/red_pitaya.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/constrs_1/imports/code/red_pitaya.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/red_pitaya_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/red_pitaya_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/constrs_1/new/red_pitaya_top.xdc]
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/constrs_1/new/red_pitaya_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/constrs_1/new/red_pitaya_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/red_pitaya_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/red_pitaya_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/red_pitaya_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/red_pitaya_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1432.430 ; gain = 0.000 ; free physical = 366 ; free virtual = 5986
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12049 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1432.430 ; gain = 590.730 ; free physical = 367 ; free virtual = 5982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1432.430 ; gain = 590.730 ; free physical = 367 ; free virtual = 5982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for i_ps/system_i/system_i/processing_system7_0/inst. (constraint file  /home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.runs/synth_1/dont_touch.xdc, line 15).
+Applied set_property DONT_TOUCH = true for i_ps/system_i/system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for i_ps/system_i/system_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1432.430 ; gain = 590.730 ; free physical = 367 ; free virtual = 5982
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/axi_master.v:233]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/axi_master.v:161]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/axi_master.v:401]
+INFO: [Synth 8-5546] ROM "dac_pwm_bcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dac_pwm_va0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_p_dat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_p_dir_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_n_dat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_n_dir_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSsoftwaretrigger" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DDSreset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "phase_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "phase_reset" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "curDDSchannel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_a_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_b_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_c_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_d_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_temp_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_pint_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_paux_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_bram_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_int_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_aux_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_ddr_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_v_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_b_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_c_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_a_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_d_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_tx_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_tx_sys" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_rx_train" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_tst_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a0_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b0_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a1_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b1_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-327] inferring latch for variable 'txp_dv_reg' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'txp_dat_reg' [/home/paul/developing/workspace/RedPitaya/Paul/web-apps/m-dds-seq/src/fpga/SharedPitaya.srcs/sources_1/imports/code/rtl/red_pitaya_daisy.v:146]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1432.430 ; gain = 590.730 ; free physical = 356 ; free virtual = 5970
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |red_pitaya_analog__GC0 |           1|       918|
+|2     |red_pitaya_pid__GB0    |           1|     27581|
+|3     |red_pitaya_pid__GB1    |           1|     11353|
+|4     |red_pitaya_pid__GB2    |           1|     16792|
+|5     |red_pitaya_daisy__GC0  |           1|      2087|
+|6     |red_pitaya_top__GC0    |           1|      7035|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 10    
+	   2 Input     46 Bit       Adders := 10    
+	   2 Input     32 Bit       Adders := 14    
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 10    
+	   2 Input     14 Bit       Adders := 18    
+	   2 Input      9 Bit       Adders := 11    
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 21    
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	              142 Bit    Registers := 30    
+	               64 Bit    Registers := 24    
+	               57 Bit    Registers := 1     
+	               46 Bit    Registers := 20    
+	               32 Bit    Registers := 51    
+	               24 Bit    Registers := 4     
+	               20 Bit    Registers := 10    
+	               16 Bit    Registers := 22    
+	               14 Bit    Registers := 72    
+	               12 Bit    Registers := 15    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 27    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 34    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 13    
+	                1 Bit    Registers := 109   
++---RAMs : 
+	             142K Bit         RAMs := 10    
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 30    
+	   4 Input    142 Bit        Muxes := 10    
+	   5 Input    142 Bit        Muxes := 10    
+	   2 Input     64 Bit        Muxes := 30    
+	   2 Input     46 Bit        Muxes := 20    
+	   2 Input     32 Bit        Muxes := 5     
+	  11 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 30    
+	   4 Input     20 Bit        Muxes := 10    
+	   3 Input     20 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 141   
+	   3 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 30    
+	   8 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module red_pitaya_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module red_pitaya_analog 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 4     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module bram_tdp__1 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp__2 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp__3 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp__4 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp__5 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp__6 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp__7 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bus_clk_bridge__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
+Module bram_tdp__8 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp__9 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module bram_tdp 
+Detailed RTL Component Info : 
++---Registers : 
+	              142 Bit    Registers := 2     
++---RAMs : 
+	             142K Bit         RAMs := 1     
+Module DDS_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     46 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              142 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    142 Bit        Muxes := 3     
+	   4 Input    142 Bit        Muxes := 1     
+	   5 Input    142 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     46 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module red_pitaya_pid 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 18    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 20    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module red_pitaya_daisy_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+Module red_pitaya_daisy_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module red_pitaya_daisy_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module red_pitaya_daisy 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module axi_master__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 10    
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+Module axi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 10    
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+Module axi_slave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module red_pitaya_hk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               57 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module bus_clk_bridge 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
+Module red_pitaya_ams 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 4     
+	               12 Bit    Registers := 12    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+Module red_pitaya_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   4 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 13    
+	               14 Bit    Registers := 18    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1432.438 ; gain = 590.738 ; free physical = 355 ; free virtual = 5970
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "dac_pwm_bcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5545] ROM "DDSftwfull" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DDS_dftw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DDSftw_IF" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP DDSintermediate_I, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_I_reg is absorbed into DSP DDSintermediate_I.
+DSP Report: operator DDSintermediate_I is absorbed into DSP DDSintermediate_I.
+DSP Report: Generating DSP DDSintermediate_Q, operation Mode is: A*B2.
+DSP Report: register DDS_unscaled_Q_reg is absorbed into DSP DDSintermediate_Q.
+DSP Report: operator DDSintermediate_Q is absorbed into DSP DDSintermediate_Q.
+INFO: [Synth 8-5546] ROM "DDSsoftwaretrigger" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "phase_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DDSreset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "curDDSchannel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_tx_sys" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_tx_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_rx_train" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cfg_tst_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "led_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_p_dat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_p_dir_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_n_dat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_n_dir_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_a_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_b_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_c_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_d_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_a_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_b_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_c_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_d_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_v_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_temp_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_pint_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_paux_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_bram_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_int_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_aux_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adc_ddr_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a1_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a0_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b0_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b1_r" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP m_reg[0].mult_aa_reg, operation Mode is: (C'+A2*B2)'.
+DSP Report: register B is absorbed into DSP m_reg[0].mult_aa_reg.
+DSP Report: register A is absorbed into DSP m_reg[0].mult_aa_reg.
+DSP Report: register rand_dat_reg is absorbed into DSP m_reg[0].mult_aa_reg.
+DSP Report: register m_reg[0].mult_aa_reg is absorbed into DSP m_reg[0].mult_aa_reg.
+DSP Report: operator p_1_out is absorbed into DSP m_reg[0].mult_aa_reg.
+DSP Report: operator p_0_out is absorbed into DSP m_reg[0].mult_aa_reg.
+DSP Report: Generating DSP m_reg[1].mult_aa_reg, operation Mode is: (C'+A2*B'')'.
+DSP Report: register B is absorbed into DSP m_reg[1].mult_aa_reg.
+DSP Report: register B is absorbed into DSP m_reg[1].mult_aa_reg.
+DSP Report: register A is absorbed into DSP m_reg[1].mult_aa_reg.
+DSP Report: register rand_dat_reg is absorbed into DSP m_reg[1].mult_aa_reg.
+DSP Report: register m_reg[1].mult_aa_reg is absorbed into DSP m_reg[1].mult_aa_reg.
+DSP Report: operator p_1_out is absorbed into DSP m_reg[1].mult_aa_reg.
+DSP Report: operator p_0_out is absorbed into DSP m_reg[1].mult_aa_reg.
+DSP Report: Generating DSP m_reg[0].mult_bb_reg, operation Mode is: (C'+A2*B2)'.
+DSP Report: register B is absorbed into DSP m_reg[0].mult_bb_reg.
+DSP Report: register rand_dat_reg is absorbed into DSP m_reg[0].mult_bb_reg.
+DSP Report: register C is absorbed into DSP m_reg[0].mult_bb_reg.
+DSP Report: register m_reg[0].mult_bb_reg is absorbed into DSP m_reg[0].mult_bb_reg.
+DSP Report: operator p_1_out is absorbed into DSP m_reg[0].mult_bb_reg.
+DSP Report: operator p_0_out is absorbed into DSP m_reg[0].mult_bb_reg.
+DSP Report: Generating DSP m_reg[1].mult_bb_reg, operation Mode is: (C'+A2*B'')'.
+DSP Report: register B is absorbed into DSP m_reg[1].mult_bb_reg.
+DSP Report: register B is absorbed into DSP m_reg[1].mult_bb_reg.
+DSP Report: register rand_dat_reg is absorbed into DSP m_reg[1].mult_bb_reg.
+DSP Report: register C is absorbed into DSP m_reg[1].mult_bb_reg.
+DSP Report: register m_reg[1].mult_bb_reg is absorbed into DSP m_reg[1].mult_bb_reg.
+DSP Report: operator p_1_out is absorbed into DSP m_reg[1].mult_bb_reg.
+DSP Report: operator p_0_out is absorbed into DSP m_reg[1].mult_bb_reg.
+WARNING: [Synth 8-3917] design red_pitaya_top has port adc_clk_o[1] driven by constant 1
+WARNING: [Synth 8-3917] design red_pitaya_top has port adc_clk_o[0] driven by constant 0
+WARNING: [Synth 8-3917] design red_pitaya_top has port adc_cdcs_o driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1432.438 ; gain = 590.738 ; free physical = 336 ; free virtual = 5952
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1432.438 ; gain = 590.738 ; free physical = 336 ; free virtual = 5952
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |red_pitaya_analog__GC0 |           1|      1098|
+|2     |red_pitaya_pid__GB0    |           1|     23546|
+|3     |red_pitaya_pid__GB1    |           1|      9739|
+|4     |red_pitaya_pid__GB2    |           1|     14258|
+|5     |red_pitaya_daisy__GC0  |           1|      1778|
+|6     |red_pitaya_top__GC0    |           1|      6890|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|DDS_machine | rom        | 256x14        | LUT            | 
+|DDS_machine | rom__1     | 256x14        | LUT            | 
+|DDS_machine | extrom     | 256x14        | Block RAM      | 
+|DDS_machine | rom__20    | 256x14        | LUT            | 
+|DDS_machine | extrom__1  | 256x14        | Block RAM      | 
+|DDS_machine | rom__21    | 256x14        | LUT            | 
+|DDS_machine | extrom__2  | 256x14        | Block RAM      | 
+|DDS_machine | rom__22    | 256x14        | LUT            | 
+|DDS_machine | extrom__3  | 256x14        | Block RAM      | 
+|DDS_machine | rom__23    | 256x14        | LUT            | 
+|DDS_machine | extrom__4  | 256x14        | Block RAM      | 
+|DDS_machine | rom__24    | 256x14        | LUT            | 
+|DDS_machine | extrom__5  | 256x14        | Block RAM      | 
+|DDS_machine | rom__25    | 256x14        | LUT            | 
+|DDS_machine | extrom__6  | 256x14        | Block RAM      | 
+|DDS_machine | rom__26    | 256x14        | LUT            | 
+|DDS_machine | extrom__7  | 256x14        | Block RAM      | 
+|DDS_machine | rom__27    | 256x14        | LUT            | 
+|DDS_machine | extrom__8  | 256x14        | Block RAM      | 
+|DDS_machine | rom__28    | 256x14        | LUT            | 
+|DDS_machine | extrom__9  | 256x14        | Block RAM      | 
+|DDS_machine | rom        | 256x14        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Block RAM:
++--------------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------------+
+|Module Name         | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name               | 
++--------------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------------+
+|red_pitaya_pid__GB0 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__11 | 
+|red_pitaya_pid__GB0 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__13 | 
+|red_pitaya_pid__GB0 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__15 | 
+|red_pitaya_pid__GB0 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__17 | 
+|red_pitaya_pid__GB0 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__19 | 
+|red_pitaya_pid__GB1 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__21 | 
+|red_pitaya_pid__GB1 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__23 | 
+|red_pitaya_pid__GB2 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__25 | 
+|red_pitaya_pid__GB2 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__27 | 
+|red_pitaya_pid__GB2 | mem_reg    | 1 K x 142(WRITE_FIRST) | W | R | 1 K x 142(WRITE_FIRST) |   | R | Port A and B | 0      | 4      | DDS_machine/bram_tdp/extram__29 | 
++--------------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+Distributed RAM: 
++--------------------+----------------+----------------+----------------------+---------------+----------------------------------+
+|Module Name         | RTL Object     | Inference      | Size (Depth x Width) | Primitives    | Hierarchical Name                | 
++--------------------+----------------+----------------+----------------------+---------------+----------------------------------+
+|red_pitaya_top__GC0 | axi_awfifo_reg | User Attribute | 16 x 37              | RAM32M x 7    | red_pitaya_ps/axi_master/ram__12 | 
+|red_pitaya_top__GC0 | axi_wfifo_reg  | User Attribute | 16 x 73              | RAM32M x 13   | red_pitaya_ps/axi_master/ram__14 | 
+|red_pitaya_top__GC0 | axi_rfifo_reg  | User Attribute | 16 x 64              | RAM32M x 11   | red_pitaya_ps/axi_master/ram__16 | 
+|red_pitaya_top__GC0 | axi_awfifo_reg | User Attribute | 16 x 37              | RAM32M x 7    | red_pitaya_ps/axi_master/ram__18 | 
+|red_pitaya_top__GC0 | axi_wfifo_reg  | User Attribute | 16 x 73              | RAM32M x 13   | red_pitaya_ps/axi_master/ram__20 | 
+|red_pitaya_top__GC0 | axi_rfifo_reg  | User Attribute | 16 x 64              | RAM32M x 11   | red_pitaya_ps/axi_master/ram__22 | 
++--------------------+----------------+----------------+----------------------+---------------+----------------------------------+
+
+Note: The table above shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++----------------+--------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping  | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+--------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|DDS_machine     | A*B2         | No           | 15     | 14     | 48     | 25     | 29     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|red_pitaya_test | (C'+A2*B2)'  | No           | 16     | 14     | 14     | 25     | 32     | 1    | 1    | 1    | 1    | 1     | 0    | 1    | 
+|red_pitaya_test | (C'+A2*B'')' | No           | 16     | 14     | 14     | 25     | 32     | 1    | 2    | 1    | 1    | 1     | 0    | 1    | 
+|red_pitaya_test | (C'+A2*B2)'  | No           | 16     | 14     | 14     | 25     | 32     | 1    | 1    | 1    | 1    | 1     | 0    | 1    | 
+|red_pitaya_test | (C'+A2*B'')' | No           | 16     | 14     | 14     | 25     | 32     | 1    | 2    | 1    | 1    | 1     | 0    | 1    | 
++----------------+--------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__1.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__2.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__3.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__4.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__5.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__5.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_pid/i_1/ack_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_1/\rdata_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__6.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__7.
+WARNING: [Synth 8-3332] Sequential element (sys_rd_reg) is unused and will be removed from module bus_clk_bridge__1.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pid/i_2/err_reg)
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__8.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[10] ) is unused and will be removed from module DDS_machine__9.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[19] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[18] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[17] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[16] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[15] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[14] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[13] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[12] ) is unused and will be removed from module DDS_machine.
+WARNING: [Synth 8-3332] Sequential element (\memaddr_reg[11] ) is unused and will be removed from module DDS_machine.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_daisy/i_0/sys_err_o_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/i_ams/ack_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/sys_rrdy_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/sys_rrdy_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__3/\axi_rfill_lvl_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/rdata_in_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/sys_wrdy_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/wr_cnt_inferred__0/\wr_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/wr_cnt_inferred__0/\wr_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/wr_cnt_inferred__0/\wr_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/wr_cnt_inferred__0/\wr_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wwr_pt0_inferred/\axi_wwr_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_wrd_pt0_inferred/\axi_wrd_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/p_0_out_inferred__3/\axi_rfill_lvl_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/rdata_in_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awwr_pt0_inferred/\axi_awwr_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/axi_awrd_pt0_inferred/\axi_awrd_pt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/sys_wrdy_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/wr_cnt_inferred__0/\wr_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/wr_cnt_inferred__0/\wr_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/wr_cnt_inferred__0/\wr_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/wr_cnt_inferred__0/\wr_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/wdata_in_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__2/\axi_wfill_lvl_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__2/\axi_wfill_lvl_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__2/\axi_wfill_lvl_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__2/\axi_wfill_lvl_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__3/\axi_rfill_lvl_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__3/\axi_rfill_lvl_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__3/\axi_rfill_lvl_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/awdata_in_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__1/\axi_awfill_lvl_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__1/\axi_awfill_lvl_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__1/\axi_awfill_lvl_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp1_master/p_0_out_inferred__1/\axi_awfill_lvl_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/i_ps/i_hp1_master/nxt_burst_rdy_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/wdata_in_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_ps/i_hp0_master/p_0_out_inferred__2/\axi_wfill_lvl_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1432.438 ; gain = 590.738 ; free physical = 332 ; free virtual = 5948
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1432.438 ; gain = 590.738 ; free physical = 332 ; free virtual = 5948
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |red_pitaya_analog__GC0 |           1|       551|
+|2     |red_pitaya_pid__GB0    |           1|      9382|
+|3     |red_pitaya_pid__GB1    |           1|      3931|
+|4     |red_pitaya_pid__GB2    |           1|      5693|
+|5     |red_pitaya_daisy__GC0  |           1|       994|
+|6     |red_pitaya_top__GC0    |           1|      4202|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 1651.430 ; gain = 809.730 ; free physical = 153 ; free virtual = 5642
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:44 . Memory (MB): peak = 1689.438 ; gain = 847.738 ; free physical = 116 ; free virtual = 5605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |red_pitaya_analog__GC0 |           1|       551|
+|2     |red_pitaya_daisy__GC0  |           1|       994|
+|3     |red_pitaya_top__GC0    |           1|      4202|
+|4     |red_pitaya_pid_GT0     |           1|     19006|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance DDSind_red_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:53 ; elapsed = 00:01:55 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5608
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5608
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5608
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5608
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5608
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5608
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++----------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|red_pitaya_pid        | trig_debouncer_reg[4]    | 5      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|red_pitaya_daisy_test | rand_work_reg[26]        | 5      | 2     | YES          | NO                 | NO                | 2      | 0       | 
+|red_pitaya_test       | r_reg[5].fifo_aa_reg[97] | 5      | 14    | NO           | NO                 | YES               | 14     | 0       | 
++----------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BIBUF     |   130|
+|2     |BUFG      |    15|
+|3     |BUFIO     |     1|
+|4     |BUFR      |     1|
+|5     |CARRY4    |   663|
+|6     |DNA_PORT  |     1|
+|7     |DSP48E1_1 |     2|
+|8     |DSP48E1_2 |     2|
+|9     |DSP48E1_3 |    20|
+|10    |GND       |     1|
+|11    |ISERDESE2 |     1|
+|12    |LUT1      |   804|
+|13    |LUT2      |  3015|
+|14    |LUT3      |   808|
+|15    |LUT4      |   903|
+|16    |LUT5      |   374|
+|17    |LUT6      |  1442|
+|18    |MUXF7     |    34|
+|19    |ODDR      |    18|
+|20    |ODDR_1    |     1|
+|21    |OSERDESE2 |     1|
+|22    |PLLE2_ADV |     1|
+|23    |PS7       |     1|
+|24    |RAMB18E1  |    10|
+|25    |RAMB36E1  |    40|
+|26    |SRL16E    |    17|
+|27    |XADC      |     1|
+|28    |FDCE      |    17|
+|29    |FDRE      |  7185|
+|30    |FDSE      |    49|
+|31    |LD        |    17|
+|32    |IBUF      |     8|
+|33    |IBUFDS    |     2|
+|34    |IBUFGDS   |     1|
+|35    |IOBUF     |    16|
+|36    |OBUF      |    33|
+|37    |OBUFDS    |     2|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------------------------------------+------+
+|      |Instance                     |Module                                     |Cells |
++------+-----------------------------+-------------------------------------------+------+
+|1     |top                          |                                           | 15637|
+|2     |  i_analog                   |red_pitaya_analog                          |   391|
+|3     |  i_pid                      |red_pitaya_pid                             | 12279|
+|4     |    \DDSfreqs[6].DDS_machs   |DDS_machine__6                             |  1157|
+|5     |      DDS_mem                |bram_tdp__6                                |     4|
+|6     |    \DDSfreqs[2].DDS_machs   |DDS_machine__8                             |  1157|
+|7     |      DDS_mem                |bram_tdp__8                                |     4|
+|8     |    \DDSfreqs[1].DDS_machs   |DDS_machine__9                             |  1157|
+|9     |      DDS_mem                |bram_tdp__9                                |     4|
+|10    |    \DDSfreqs[0].DDS_machs   |DDS_machine                                |  1157|
+|11    |      DDS_mem                |bram_tdp                                   |     4|
+|12    |    \DDSfreqs[9].DDS_machs   |DDS_machine__5                             |  1157|
+|13    |      DDS_mem                |bram_tdp__5                                |     4|
+|14    |    \DDSfreqs[8].DDS_machs   |DDS_machine__4                             |  1157|
+|15    |      DDS_mem                |bram_tdp__4                                |     4|
+|16    |    \DDSfreqs[7].DDS_machs   |DDS_machine__3                             |  1157|
+|17    |      DDS_mem                |bram_tdp__3                                |     4|
+|18    |    \DDSfreqs[4].DDS_machs   |DDS_machine__2                             |  1157|
+|19    |      DDS_mem                |bram_tdp__2                                |     4|
+|20    |    \DDSfreqs[3].DDS_machs   |DDS_machine__1                             |  1157|
+|21    |      DDS_mem                |bram_tdp__1                                |     4|
+|22    |    \DDSfreqs[5].DDS_machs   |DDS_machine__7                             |  1157|
+|23    |      DDS_mem                |bram_tdp__7                                |     4|
+|24    |    i_bridge                 |bus_clk_bridge__1                          |    66|
+|25    |  i_daisy                    |red_pitaya_daisy                           |   664|
+|26    |    i_tx                     |red_pitaya_daisy_tx                        |    40|
+|27    |    i_rx                     |red_pitaya_daisy_rx                        |   105|
+|28    |    i_test                   |red_pitaya_daisy_test                      |   278|
+|29    |  i_ps                       |red_pitaya_ps                              |   437|
+|30    |    i_gp0_slave              |axi_slave                                  |   208|
+|31    |    system_i                 |system_wrapper                             |   225|
+|32    |      system_i               |system                                     |   225|
+|33    |        processing_system7_0 |system_processing_system7_0_0              |   224|
+|34    |          inst               |processing_system7_v5_3_processing_system7 |   224|
+|35    |  i_hk                       |red_pitaya_hk                              |   264|
+|36    |  i_ams                      |red_pitaya_ams                             |   459|
+|37    |    i_bridge                 |bus_clk_bridge                             |    60|
+|38    |  i_test                     |red_pitaya_test                            |  1004|
++------+-----------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5608
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3293 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:01:47 . Memory (MB): peak = 1710.469 ; gain = 401.523 ; free physical = 134 ; free virtual = 5607
+Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1710.469 ; gain = 868.770 ; free physical = 134 ; free virtual = 5607
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'i_ams/XADC_inst' of type 'XADC' is '7SERIES'; it is being changed to match the current FPGA architecture, 'ZYNQ'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 806 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  LD => LDCE: 17 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+362 Infos, 271 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:02 ; elapsed = 00:02:04 . Memory (MB): peak = 1710.469 ; gain = 787.438 ; free physical = 133 ; free virtual = 5607
+report_utilization: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1742.484 ; gain = 0.000 ; free physical = 130 ; free virtual = 5606
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  7 16:27:46 2017...

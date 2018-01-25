@@ -1,0 +1,7 @@
+saturate output (output ONLY, or intermediate too? probably only output, since we will have plenty of intermediate digits!)
+optimize SNR-- don't right shift until the end?!
+implement PARALLEL channels -- see if we can do this efficiently by tweaking the state machine to have the final value output to a wire that can then be sent into the next FSM, and also the alpha RAM accessing multiplexed in the main PID, rather than the block!
+for parallel channels -- nIR_PERCHANNEL should be per channel in the outer PID and nIR is per channel in the inner. also 
+feed in external clock to RP to make it more stable!
+low-pass filter output (software _or_ hardware!)! no reason that it should be sooooo steep!
+get rid of the ability to control the time length-- once we are using multiple filter filter summers it won't mean anything. the wait state should be removed!

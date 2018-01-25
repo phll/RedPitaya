@@ -1,0 +1,307 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11748,        298]
+NotebookOptionsPosition[     11112,        272]
+NotebookOutlinePosition[     11467,        288]
+CellTagsIndexPosition[     11424,        285]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SineDepth", "=", "128"}], ";", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Number", " ", "of", " ", "entries", " ", "in", " ", "the", " ", "table"}],
+    "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"SineWidth", "=", "14"}], ";", 
+  RowBox[{"(*", 
+   RowBox[{"bit", " ", "width", " ", "of", " ", "each", " ", "entry"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"twoscomplement", "[", 
+      RowBox[{"n_", ",", 
+       RowBox[{"bits_:", "32"}]}], "]"}], ":=", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"n", "\[GreaterEqual]", "0"}], ",", 
+       RowBox[{"IntegerDigits", "[", 
+        RowBox[{"n", ",", "2", ",", "bits"}], "]"}], ",", 
+       RowBox[{"1", "-", 
+        RowBox[{"IntegerDigits", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"2", "^", "bits"}], "-", "n", "+", "1"}], ",", "2", ",", 
+          "bits"}], "]"}]}]}], "]"}]}], ";", " ", 
+    RowBox[{"THIS", " ", "CODE", " ", "DOES", " ", "NOT", " ", "WORK", " ", 
+     RowBox[{"PROPERLY", "!"}]}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"twoscomplement", "[", 
+    RowBox[{"n_", ",", 
+     RowBox[{"bits_:", "32"}]}], "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"Positive", "[", "n", "]"}], ",", 
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"n", ",", "2", ",", "bits"}], "]"}], ",", 
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"FromDigits", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"IntegerDigits", "[", 
+            RowBox[{"n", ",", "2", ",", "bits"}], "]"}], "/.", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1", "\[Rule]", "0"}], ",", 
+             RowBox[{"0", "\[Rule]", "1"}]}], "}"}]}], ",", "2"}], "]"}], "+",
+         "1"}], ",", "2", ",", "bits"}], "]"}]}], 
+    "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SineTable", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["2", 
+          RowBox[{"SineWidth", "-", "1."}]], "-", "1"}], ")"}], 
+       RowBox[{"Sin", "[", 
+        RowBox[{"2.", "\[Pi]", " ", 
+         FractionBox["jj", "SineDepth"]}], "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"jj", ",", "0", ",", 
+       RowBox[{"SineDepth", "-", "1"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CosineTable", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["2", 
+          RowBox[{"SineWidth", "-", "1."}]], "-", "1"}], ")"}], 
+       RowBox[{"Cos", "[", 
+        RowBox[{"2.", "\[Pi]", " ", 
+         FractionBox["jj", "SineDepth"]}], "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"jj", ",", "0", ",", 
+       RowBox[{"SineDepth", "-", "1"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"\"\<sinetable\>\"", "<>", 
+    RowBox[{"ToString", "[", "SineDepth", "]"}], "<>", "\"\<x\>\"", "<>", 
+    RowBox[{"ToString", "[", "SineWidth", "]"}], "<>", "\"\<bit.txt\>\""}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"IntegerString", "[", 
+      RowBox[{
+       RowBox[{"FromDigits", "[", 
+        RowBox[{
+         RowBox[{"twoscomplement", "[", 
+          RowBox[{"#", ",", "SineWidth"}], "]"}], ",", "2"}], "]"}], ",", 
+       "16"}], "]"}], "&"}], "/@", "SineTable"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"\"\<cosinetable\>\"", "<>", 
+    RowBox[{"ToString", "[", "SineDepth", "]"}], "<>", "\"\<x\>\"", "<>", 
+    RowBox[{"ToString", "[", "SineWidth", "]"}], "<>", "\"\<bit.txt\>\""}], 
+   ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"IntegerString", "[", 
+      RowBox[{
+       RowBox[{"FromDigits", "[", 
+        RowBox[{
+         RowBox[{"twoscomplement", "[", 
+          RowBox[{"#", ",", "SineWidth"}], "]"}], ",", "2"}], "]"}], ",", 
+       "16"}], "]"}], "&"}], "/@", "CosineTable"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6762178109234247`*^9, 3.6762178234242697`*^9}, {
+   3.6762832487368727`*^9, 3.676283249513988*^9}, {3.6762833276633*^9, 
+   3.676283335156591*^9}, {3.6762833679387493`*^9, 3.676283522420806*^9}, {
+   3.676295197593451*^9, 3.67629520471926*^9}, {3.676303701559616*^9, 
+   3.676303710217058*^9}, 3.676304079578218*^9, {3.676304418657549*^9, 
+   3.676304445803659*^9}, 3.676304561077024*^9, {3.6763046153312263`*^9, 
+   3.676304617295001*^9}, {3.6763062486580553`*^9, 3.676306274409206*^9}, {
+   3.676373507325038*^9, 3.676373515159284*^9}, {3.676751135614085*^9, 
+   3.676751175596156*^9}, {3.6787618540811872`*^9, 3.678761856228548*^9}, {
+   3.67946888852223*^9, 3.679468897416492*^9}, 3.679472309325754*^9, {
+   3.679472627148171*^9, 3.679472630225842*^9}, {3.679517694732695*^9, 
+   3.679517695315493*^9}, {3.679525374455657*^9, 3.6795253954344797`*^9}, {
+   3.679525478604436*^9, 3.679525479107567*^9}, {3.6795273555926113`*^9, 
+   3.679527357388143*^9}}],
+
+Cell[BoxData["\<\"sinetable128x14bit.txt\"\>"], "Output",
+ CellChangeTimes->{
+  3.6762834902892427`*^9, 3.676283524475737*^9, 3.676295206055564*^9, 
+   3.676303710665359*^9, 3.676304080273756*^9, 3.6763044461240597`*^9, 
+   3.6763045616292257`*^9, 3.676304618166709*^9, {3.676306256029996*^9, 
+   3.6763062912304296`*^9}, 3.676308774958929*^9, 3.676308894923936*^9, 
+   3.6767511792691193`*^9, 3.678761862390826*^9, {3.679468893314472*^9, 
+   3.6794688980221853`*^9}, 3.679472271091187*^9, 3.67947231022861*^9, 
+   3.679472355417839*^9, 3.679472632006749*^9, 3.679517696624469*^9, {
+   3.679525376143545*^9, 3.679525396130191*^9}, 3.6795254952898493`*^9, 
+   3.6795273578085947`*^9}],
+
+Cell[BoxData["\<\"cosinetable128x14bit.txt\"\>"], "Output",
+ CellChangeTimes->{
+  3.6762834902892427`*^9, 3.676283524475737*^9, 3.676295206055564*^9, 
+   3.676303710665359*^9, 3.676304080273756*^9, 3.6763044461240597`*^9, 
+   3.6763045616292257`*^9, 3.676304618166709*^9, {3.676306256029996*^9, 
+   3.6763062912304296`*^9}, 3.676308774958929*^9, 3.676308894923936*^9, 
+   3.6767511792691193`*^9, 3.678761862390826*^9, {3.679468893314472*^9, 
+   3.6794688980221853`*^9}, 3.679472271091187*^9, 3.67947231022861*^9, 
+   3.679472355417839*^9, 3.679472632006749*^9, 3.679517696624469*^9, {
+   3.679525376143545*^9, 3.679525396130191*^9}, 3.6795254952898493`*^9, 
+   3.6795273578792257`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Length", "[", "SineTable", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Length", "[", "CosineTable", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Max", "[", "SineTable", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Max", "[", "CosineTable", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"{", 
+   RowBox[{"SineTable", ",", "CosineTable"}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6795253392731333`*^9, 3.679525392008706*^9}}],
+
+Cell[BoxData["128"], "Output",
+ CellChangeTimes->{{3.679525340706513*^9, 3.6795253923515778`*^9}, {
+   3.679525473747327*^9, 3.679525496879794*^9}, 3.6795273597099457`*^9}],
+
+Cell[BoxData["128"], "Output",
+ CellChangeTimes->{{3.679525340706513*^9, 3.6795253923515778`*^9}, {
+   3.679525473747327*^9, 3.679525496879794*^9}, 3.679527359715131*^9}],
+
+Cell[BoxData["8191"], "Output",
+ CellChangeTimes->{{3.679525340706513*^9, 3.6795253923515778`*^9}, {
+   3.679525473747327*^9, 3.679525496879794*^9}, 3.679527359718947*^9}],
+
+Cell[BoxData["8191"], "Output",
+ CellChangeTimes->{{3.679525340706513*^9, 3.6795253923515778`*^9}, {
+   3.679525473747327*^9, 3.679525496879794*^9}, 3.679527359721715*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.007333333333333334], 
+     AbsoluteThickness[1.6], PointBox[CompressedData["
+1:eJxd08tLVGEYx/FDq3BjixYuWkwREUNE96arr9q9qRy7OTVdGHAt6KqF8m7b
+JESLQDAJEkEQZRyvo56d/Qn+E0IboZ2Zv+/zwDkH9MeHM88573nf5zleH+wb
+OJQkSdz/+5+6/nQm2Ssc/C98UiaHlR2f8RHl76/4qPLvd9zB73/gY8pvP3FB
++eUXPqEcncYnlbUZfEpZnMWnlcNzuKjcmsdnlO0NfFZZXsDnlCNNfF45uYgv
+KJtL+KKytYwvKRsr+LJyfBVfUQ6t4avKUguXlDvma8qxdXxdWdjAN5QT5pvK
+tk18S1k331ZOmTuV2+ag3MUR79n9rtz9rlx9d/b5sTv3/p7s+mJPbv13st8X
+sX//XaXtT8S+f/eUtr8R+/7fV9r5ROzn90Bp5xuxn/9DpfVHxN4/j5TWXxF7
+/z1WWn9G7P1bVlp/R+z9/0Rp8xGxz89Tpc1XxD5/z5Q2nxH7/PYqbb4Dtiv6
+/fQg016rl5OKPV8OFXu/HCu2Puortn7q++z7qMej09Tj2gz1uDhL/XN5eI56
+vDVPPW5vUI/LC9S/kEea1OPJRepxc4l63Fqm/qXcWKEej69Sj4fWqMelFvWv
+5B0c8Ng69biwQT2ewMlruW2TelzHEU/hFG/jpF/etXq8Z/W5+2l/rr6afX6o
+5t5fza4vrebW/yb7fQH792PbnxT7/r2VbX8D9v3Hdj4p9vOryXa+Afv5Y+uP
+FHv/vJOtvwL2/sPWnyn2/n0vW38H7P2PbT5S7PPzQbb5CtjnD9t8pvZ7m9+P
+8v58/wOLdTzM
+      "]]}, 
+    {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.007333333333333334], 
+     AbsoluteThickness[1.6], PointBox[CompressedData["
+1:eJxd1ctLlFEcxvGhVbixRQsXLaaICInonl09avesHLs5pRVC60BXLZSzbaMQ
+LQLBJFAEQZRxvI56dvYn+E8IbYR2Zj3f58A4IA8fn3ln3nnf857f8f5P3R8P
+FQqFuP/3L/X63fo/9jYD/1Du2oeV2/YR5ZR9VNlvNykb7GPK8Q1cVBbtE8rR
+dXxSuVPDp5Qt9mnlwBpuVo6t4jPKygo+q6wt43PK6hI+r5xYxBeUQ1V8Udm5
+gC8pGyv4snJrHl9RDs7hq8rmWdyi7J3B15TD0/i6cmQS31B++4lvKpt+4FvK
+P9/xbeWvr7iV93/BQVn8rIw4v9rcJ/VtPl4utPvz6dv9/fQdPj/6Dp8//R15
+ZJIeD0/T35V7Z+hx8yz9PXlwjh5vzdPflxsr9Lhzgf6BPFSlxxOL9A/l6hI9
+ri3TP5IrK/R4bJX+sTywRo9bavSd8g6OeHSd/olc3KDH47jwVG7YpMf9uPBM
+nnKPt913ybs44D2//0Cfug4cX6r//FCq//5Yqj+/VDpw/t31vy9g//6IfX0S
+ztfvuezrG7Cvf8S+Pwnn+/dC9v0N2Pc/Yq+PhPP6eSl7fQXs9Rex12fCef2+
+kr2+A/b6j9jPR8L5+Xkt+/kK2M9fxH4+k9/v57dH9vMdsF8x98rU4+N5X9mf
+rwxlf78yln1+HF/2+XP8G/8+jsfe/yL2/phw3j/fKr2/Buz9N2Lvzwnn/btX
+6f09YO//EXs+JJznR5/S8yVgz5+IPZ8SzvPrndLzLWDPv4g9HxPO8/O90vM1
+YM/fiD2fE87z+4Nyf77/BYeePMw=
+      "]]}, {}}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{},
+  PlotRange->{{0., 128.}, {-8191., 8191.}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.679525340706513*^9, 3.6795253923515778`*^9}, {
+   3.679525473747327*^9, 3.679525496879794*^9}, 3.6795273597517157`*^9}]
+}, Open  ]]
+},
+WindowSize->{1252, 691},
+WindowMargins->{{Automatic, 0}, {-44, Automatic}},
+FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 29, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5196, 135, 266, "Input"],
+Cell[5779, 159, 683, 10, 28, "Output"],
+Cell[6465, 171, 685, 10, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7187, 186, 466, 8, 97, "Input"],
+Cell[7656, 196, 172, 2, 28, "Output"],
+Cell[7831, 200, 170, 2, 28, "Output"],
+Cell[8004, 204, 171, 2, 28, "Output"],
+Cell[8178, 208, 171, 2, 28, "Output"],
+Cell[8352, 212, 2744, 57, 224, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

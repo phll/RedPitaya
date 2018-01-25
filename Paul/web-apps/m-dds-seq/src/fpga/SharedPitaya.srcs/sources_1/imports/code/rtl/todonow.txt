@@ -1,0 +1,6 @@
+-todo: see how many bits are necessary for the coefficient! Can we get away with one bit?! probably for low freq but not for high!
+		-fractional vs integer bits
+		-see coefficient lists for typical filters! (assuming flat with resonances is the name of the game)
+		-try out different numbers of bits! my GUESS is that 4 integer bits and 8 fractional bits will be PLENTY! or 8 and 8!
+		-store the old inputs in a RAM, at least!! this will save a TON of space =D (store one at a time, reversing the order of the sum, etc...)
+			-or use a circular list! (THIS LATTER OPTION STINKS FOR GOING TO MULTIPLE PARALLEL THREADS!)

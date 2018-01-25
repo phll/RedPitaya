@@ -1,0 +1,268 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Tue Mar  7 16:31:59 2017
+| Host         : AE5UPH16 running 64-bit Ubuntu 16.04.2 LTS
+| Command      : report_control_sets -verbose -file red_pitaya_top_control_sets_placed.rpt
+| Design       : red_pitaya_top
+| Device       : xc7z010
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   215 |
+| Minimum Number of register sites lost to control set restrictions |   365 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             730 |          241 |
+| No           | No                    | Yes                    |              17 |            4 |
+| No           | Yes                   | No                     |             650 |          178 |
+| Yes          | No                    | No                     |            3129 |          754 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            2741 |          664 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|                         Clock Signal                        |                          Enable Signal                         |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count |
++-------------------------------------------------------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|  i_daisy/i_rx/par_clk                                       |                                                                |                                                                |                1 |              3 |
+|  i_daisy/i_rx/par_clk                                       |                                                                | i_daisy/i_rx/bitslip_cnt[3]_i_1_n_0                            |                1 |              4 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/i_bridge/dst_sync[1]_i_1_n_0                             |                1 |              4 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_hk/clear                                                     |                2 |              4 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                |                                                                |                3 |              4 |
+|  i_analog/dac_2clk                                          | i_analog/dac_pwm_bcnt                                          | i_analog/dac_rst                                               |                1 |              4 |
+|  i_analog/adc_clk_o                                         |                                                                | i_ams/i_bridge/dst_sync[1]_i_1_n_0                             |                1 |              4 |
+|  i_analog/dac_2clk                                          | i_analog/dac_pwm_ba                                            | i_analog/dac_pwm_ba[15]_i_1_n_0                                |                1 |              4 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_pid/i_bridge/p_0_in__0                                       |                1 |              5 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/i_gp0_slave/ack_cnt[5]_i_2_n_0                            | i_ps/i_gp0_slave/ack_cnt[5]                                    |                1 |              5 |
+|  i_analog/adc_clk_o                                         |                                                                | i_daisy/i_tx/R0                                                |                1 |              5 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_ams/i_bridge/p_0_in__0                                       |                1 |              5 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_daisy/cfg_tx_sys[31]_i_1_n_0                                 |                3 |              5 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/led_reg[7]_i_2_n_0                                        | i_hk/clear                                                     |                3 |              7 |
+|  i_analog/adc_clk_o                                         | i_pid/curDDSchannel[7]_i_1_n_0                                 |                                                                |                2 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/exp_p_dir_o[7]_i_1_n_0                                    | i_hk/clear                                                     |                3 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/exp_p_dat_o[7]_i_1_n_0                                    | i_hk/clear                                                     |                2 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/exp_n_dir_o[7]_i_1_n_0                                    | i_hk/clear                                                     |                1 |              8 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/exp_n_dat_o[7]_i_1_n_0                                    | i_hk/clear                                                     |                2 |              8 |
+|  i_analog/adc_clk_o                                         |                                                                | i_daisy/tx_cfg_new[3]_i_1_n_0                                  |                2 |              9 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/sel                                                       | i_hk/clear                                                     |                3 |              9 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_ps/i_gp0_slave/axi_bresp_o[1]_i_1_n_0                        |                4 |             10 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_int_r[11]_i_1_n_0                                    |                                                                |                4 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_pint_r[11]_i_1_n_0                                   |                                                                |                6 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_v_r[11]_i_1_n_0                                      |                                                                |                5 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_paux_r[11]_i_1_n_0                                   |                                                                |                2 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_d_r[11]_i_1_n_0                                      |                                                                |                3 |             12 |
+|  i_analog/adc_clk_o                                         | i_daisy/i_tx/par_dv[0]_i_1_n_0                                 | i_daisy/i_tx/R0                                                |                2 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_temp_r[11]_i_1_n_0                                   |                                                                |                2 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_ddr_r[11]_i_1_n_0                                    |                                                                |                6 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_bram_r[11]_i_1_n_0                                   |                                                                |                5 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_c_r[11]_i_1_n_0                                      |                                                                |                2 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_a_r[11]_i_1_n_0                                      |                                                                |                2 |             12 |
+|  i_analog/dac_2clk                                          |                                                                | i_analog/dac_rst                                               |                9 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_aux_r[11]_i_1_n_0                                    |                                                                |                5 |             12 |
+|  i_analog/adc_clk_o                                         | i_ams/adc_b_r[11]_i_1_n_0                                      |                                                                |                3 |             12 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDSamp_IF                          |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDSamp_IF                          |                                                                |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDSamp_IF                          |                                                                |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDSamp_IF                          |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                5 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDSamp_IF                          |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDSamp_IF                          |                                                                |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDSamp_IF                          |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDSamp_IF                          |                                                                |                2 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDSamp_IF                          |                                                                |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDSamp_IF                          |                                                                |                3 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/inf[141]_i_1_n_0                   |                                                                |                4 |             14 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[6].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDSlistlen                         |                                                                |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[5].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDSlistlen                         |                                                                |                3 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[1].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[4].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDSlistlen                         |                                                                |                3 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDSlistlen                         |                                                                |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[2].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDSlistlen                         |                                                                |                2 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[8].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[7].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDSlistlen                         |                                                                |                3 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDSlistlen                         |                                                                |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[3].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_daisy/i_rx/par_clk                                       | i_daisy/i_rx/par_val                                           | i_daisy/i_rx/par_ok_i_1_n_0                                    |                3 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[0].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDSlistlen                         |                                                                |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDSlistlen                         |                                                                |                2 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDSnextlistind[0]_i_1_n_0          | i_pid/DDSfreqs[9].DDS_machs/DDSchannelawaitingtrigger          |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_daisy/i_test/tx_dv_o                                         | i_daisy/i_test/clear                                           |                2 |             16 |
+|  i_analog/adc_clk_o                                         | i_daisy/tx_rx_dv0                                              | i_daisy/tx_cfg_new[3]_i_1_n_0                                  |                4 |             16 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDSlistlen                         |                                                                |                4 |             16 |
+|  i_daisy/i_rx/par_clk                                       |                                                                | i_daisy/i_rx/par_rstn_i_1_n_0                                  |                4 |             17 |
+|  i_daisy/i_rx/par_clk                                       | i_daisy/i_rx/par_rstn_o                                        |                                                                |                3 |             17 |
+|  i_daisy/i_rx/par_clk_o                                     |                                                                | i_daisy/i_test/p_0_in                                          |                3 |             17 |
+|  i_daisy/i_rx/par_clk_o                                     | i_daisy/rxp_dv_n0                                              | i_daisy/clear                                                  |                5 |             17 |
+|  i_daisy/txp_dv_reg_i_2_n_0                                 |                                                                |                                                                |                6 |             17 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_daisy/cfg_tx_sys[31]_i_2_n_0                                 | i_daisy/cfg_tx_sys[31]_i_1_n_0                                 |                3 |             19 |
+|  i_analog/adc_clk_o                                         | i_daisy/tx_cfg_sel0                                            | i_daisy/tx_cfg_new[3]_i_1_n_0                                  |                5 |             19 |
+|  i_daisy/i_rx/par_clk                                       |                                                                | i_daisy/i_rx/par_ok_i_1_n_0                                    |                3 |             21 |
+|  i_analog/adc_clk_o                                         |                                                                | i_ams/rdata[23]_i_1_n_0                                        |               10 |             24 |
+|  i_analog/adc_clk_o                                         | i_ams/dac_a_r[23]_i_2_n_0                                      | i_ams/dac_a_r[23]_i_1_n_0                                      |                5 |             24 |
+|  i_analog/adc_clk_o                                         | i_ams/dac_b_r[23]_i_1_n_0                                      | i_ams/dac_a_r[23]_i_1_n_0                                      |                8 |             24 |
+|  i_analog/adc_clk_o                                         | i_ams/dac_c_r[23]_i_1_n_0                                      | i_ams/dac_a_r[23]_i_1_n_0                                      |                7 |             24 |
+|  i_analog/adc_clk_o                                         | i_ams/dac_d_r[23]_i_1_n_0                                      | i_ams/dac_a_r[23]_i_1_n_0                                      |                5 |             24 |
+|  i_analog/adc_clk_o                                         |                                                                | i_test/fifo_aa[13]_i_1_n_0                                     |               11 |             28 |
+|  i_analog/adc_clk_o                                         |                                                                | i_hk/led_reg[0]_i_1_n_0                                        |                8 |             28 |
+|  i_analog/dac_clk                                           |                                                                |                                                                |               10 |             29 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                5 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                5 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/a0_r[31]_i_1_n_0                                        | i_test/a1_r[31]_i_1_n_0                                        |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[6].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               13 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                6 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/a1_r[31]_i_2_n_0                                        | i_test/a1_r[31]_i_1_n_0                                        |                9 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/b0_r[31]_i_1_n_0                                        | i_test/a1_r[31]_i_1_n_0                                        |               10 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_test/b1_r[31]_i_1_n_0                                        | i_test/a1_r[31]_i_1_n_0                                        |               12 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/system_i/system_i/processing_system7_0/inst/FCLK_RESET0_N |                                                                |               19 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/i_gp0_slave/wr_wdata                                      |                                                                |                8 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                | i_daisy/sys_rdata_o[31]_i_1_n_0                                |                9 |             32 |
+|  i_analog/dac_2clk                                          | i_analog/dac_pwm_va[7]_i_1_n_0                                 |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[1].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               13 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                5 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                5 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                9 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                9 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[2].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               14 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[5].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               12 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[0].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               15 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[4].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               14 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[3].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               12 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/inf[63]_i_1_n_0                    |                                                                |               10 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[1].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[2].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[5].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[6].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[9].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[8].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[7].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[4].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[3].DDS_machs/DDSind                             |                8 |             32 |
+|  i_analog/adc_clk_o                                         |                                                                | i_pid/DDSfreqs[0].DDS_machs/DDSind                             |                8 |             32 |
+|  i_daisy/i_rx/par_clk_o                                     | i_daisy/i_test/rx_dat_cnt0                                     | i_daisy/i_test/rx_dat_cnt[31]_i_1_n_0                          |                8 |             32 |
+|  i_daisy/i_rx/par_clk_o                                     | i_daisy/i_test/rx_err_cnt0                                     | i_daisy/i_test/rx_err_cnt[31]_i_1_n_0                          |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                9 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[8].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               13 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                8 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDSftw_IF[31]_i_1_n_0              |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/inf[127]_i_1_n_0                   |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/inf[31]_i_1_n_0                    |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                7 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/inf[63]_i_1_n_0                    |                                                                |                6 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[7].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               14 |             32 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDSrampcyclesremaining[31]_i_2_n_0 | i_pid/DDSfreqs[9].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               13 |             32 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/i_gp0_slave/rd_arid                                       |                                                                |               11 |             35 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ps/i_gp0_slave/wr_awid                                       |                                                                |               11 |             35 |
+|  i_analog/dac_2clk                                          | i_analog/dac_pwm[3]_i_1_n_0                                    |                                                                |                8 |             40 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/memaddr                            |                                                                |               12 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/memaddr                            |                                                                |                9 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/memaddr                            |                                                                |                9 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/memaddr                            |                                                                |                6 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/memaddr                            |                                                                |               11 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/memaddr                            |                                                                |               13 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/memaddr                            |                                                                |               14 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/memaddr                            |                                                                |                8 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/memaddr                            |                                                                |                8 |             42 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/memaddr                            |                                                                |               10 |             42 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_ams/i_bridge/addr_o[19]_i_1_n_0                              |                                                                |               17 |             44 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDSampfull                         |                                                                |               12 |             46 |
+|  i_analog/adc_clk_o                                         |                                                                | i_daisy/i_test/clear                                           |               10 |             49 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_pid/i_bridge/addr_o[19]_i_1_n_0                              |                                                                |               12 |             50 |
+|  i_ps/system_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_hk/dna_value[56]_i_1_n_0                                     | i_hk/clear                                                     |               14 |             57 |
+|  i_analog/dac_2clk                                          | i_analog/dac_pwm_ba                                            |                                                                |               21 |             60 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[0].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[2].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[1].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[4].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[9].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[8].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[6].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[5].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[3].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDSampfull                         | i_pid/DDSfreqs[7].DDS_machs/DDSchannelawaitingtrigger          |               16 |             64 |
+|  i_analog/adc_clk_o                                         |                                                                | i_test/RSTC                                                    |               18 |             64 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[9].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[9].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               20 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[8].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[8].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               19 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[5].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[5].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               22 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[3].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[3].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               26 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[4].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[4].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               17 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[1].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[1].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               17 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[6].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[6].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               15 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[7].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[7].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               16 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[0].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[0].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               23 |            110 |
+|  i_analog/adc_clk_o                                         | i_pid/DDSfreqs[2].DDS_machs/DDS_damp[45]_i_1_n_0               | i_pid/DDSfreqs[2].DDS_machs/DDSrampcyclesremaining[31]_i_1_n_0 |               23 |            110 |
+|  i_analog/adc_clk_o                                         |                                                                |                                                                |              225 |            694 |
++-------------------------------------------------------------+----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+
+
