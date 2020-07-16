@@ -21,7 +21,9 @@ is specified by a 1bit enable value, a 1bit inital value, the amount of events (
 
 
 data comes over AXI (one channel at once)
+
 can be armed (reset) to wait on a hardware or software trigger over AXI
+
 AXI registers (each 32bit) (memory map):
 | addr (+base address)        | name                          | description
 |-----------------------------|-------------------------------|------------------------------------------------
@@ -32,8 +34,8 @@ AXI registers (each 32bit) (memory map):
 | 1                           | enable (digital)              | set digital pin direction to 'out' (=1)
 | 2                           | samples                       | number of 'actual' events specified (32bit)
 | 3                           | ampl_IF, state_IF             | initial dc value (analog, 14bit) or pin state (digital, 1bit) 
-| 40 - 40+maxevents-1         | amount cycles for each event  | needs to be stored in block ram (maxevents differ for analog and digital channels) (32bit per value)
-| 40+maxevents - 40+maxev. +(2or1)*maxev.-1 | delta voltages per cycle or state for each event  | needs to be stored in block ram (analog, 46bit; digital, 1bit per value), analog values are stored in 64bit, therefore 2*maxev. in this case |
+| 40 -- 40+maxevents-1         | amount cycles for each event  | needs to be stored in block ram (maxevents differ for analog and digital channels) (32bit per value)
+| 40+maxevents -- 40+maxev. +(2or1)*maxev.-1 | delta voltages per cycle or state for each event  | needs to be stored in block ram (analog, 46bit; digital, 1bit per value), analog values are stored in 64bit, therefore 2*maxev. in this case |
 
 channel-pin map:
 | channel |   pin
