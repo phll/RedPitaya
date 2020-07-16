@@ -28,9 +28,12 @@ To use the LC-features one has to change /etc/system.d/system/redpitaya_scpi.ser
 ## SCPI commands
 Load sequences data to RedPitaya: 
 'LC:DATA total_len,   ch, ch_len, initial, time, value, time, value,...,   ch, chlen, inital, time, value, time, value,...,   ...' returns informations about time and voltage deviations 
+
     example: flash LED0 for 1 second 'LC:DATA 8,3,5,0,1,1,2,0'
+    
 Reset/arm trigger:
 'LC:TRIG:AWAIT'
+
 Generate software trigger:
 'LC:TRIG:SOFT'
 
@@ -55,7 +58,7 @@ specifications:
 
 channel map:
 | channel |   pin
-|----------------------------------
+|---------|-------------------------
 | 0       | analog CH 1
 | 1       | analog CH 2
 | 2 - 9   | LED 0 - 7
