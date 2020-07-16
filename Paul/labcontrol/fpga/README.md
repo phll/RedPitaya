@@ -1,6 +1,6 @@
 This fpga image is based on the RedPitaya v0.94 fpga image.
 
-##Files
+## Files
 | paths                         | changes
 |-------------------------------|---------
 | `red_pitaya_top.sv`           | integrated controller module, output 125MHz clock on fpga_clk (-> schematics), output 20MHz clock on SATA connector S1(changed)
@@ -9,12 +9,13 @@ This fpga image is based on the RedPitaya v0.94 fpga image.
 | `red_pitaya.xdc`              | changed IOStandard for daisy_* pins to differential hstl class I 1.8V 
 
 
-##controller
+## controller
 description:
 Multiple analog and digital ramp machines to drive the fast analog and digital outputs (referred to as channels)  of the RedPitaya.
 
 Analog ramp: 
 is specified by a 14bit inital value, the amount of events (32bit) and such many delta_cycles(32bit), delta_voltage(46bit) pairs (the voltage is increased by delta_voltage per cycle for delta_cycles cycle)
+
 Digital ramp: 
 is specified by a 1bit enable value, a 1bit inital value, the amount of events (32bit) and such many delta_cycles(32bit), new_state(1bit) pairs (if enabled the pin direction is set to 1 and the pin state is set to new_state after delta_cycles cycles) 
 
@@ -23,7 +24,7 @@ data comes over AXI (one channel at once)
 can be armed (reset) to wait on a hardware or software trigger over AXI
 AXI registers (each 32bit) (memory map):
 | addr (+base address)        | name                          | description
-|------------------------------------------------------------------------------------------------------------
+|-----------------------------|-------------------------------|------------------------------------------------
 | 0                           | curLCchannel                  | current channel for which data is in AXI
 | 24                          | LC_reset (await_trigger)      | write anything to this address to reset ramp machines (wait for trigger)
 | 25                          | sw_trigger                    | write anything to this address to generate a software trigger
@@ -37,7 +38,7 @@ AXI registers (each 32bit) (memory map):
 
 channel-pin map:
 | channel |   pin
-|----------------------------------
+|---------|-------------------------
 | 0       | analog CH 1
 | 1       | analog CH 2
 | 2 - 9   | LED 0 - 7
@@ -46,5 +47,5 @@ channel-pin map:
 
 Look at the ../scpi-server/src/controller.c file on more information how to write data to AXI
 
-##Install
+## Install
 Copy redpitaya.runs/impl_1/red_pitaya_top.bit to RedPitaya and load it via 'cat red_pitaya_top.bit > /dev/xdevcfg'
