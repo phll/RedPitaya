@@ -40,7 +40,7 @@ AXI registers (each 32bit) (memory map):
 
 channel-pin map:
 | channel |   pin
-|----------------------------------
+|---------|-------------------------
 | 0       | analog CH 1
 | 1       | analog CH 2
 | 2 - 9   | LED 0 - 7
