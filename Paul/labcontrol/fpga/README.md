@@ -33,8 +33,7 @@ AXI registers (each 32bit) (memory map):
 | 2                           | samples                       | number of 'actual' events specified (32bit)
 | 3                           | ampl_IF, state_IF             | initial dc value (analog, 14bit) or pin state (digital, 1bit) 
 | 40 - 40+maxevents-1         | amount cycles for each event  | needs to be stored in block ram (maxevents differ for analog and digital channels) (32bit per value)
-| 40+maxevents -              \ delta voltages per cycle or   / needs to be stored in block ram (analog, 46bit; digital, 1bit per value)
-| 40+maxev. +(2or1)*maxev.-1  / state for each event          \ analog values are stored in 64bit, therefore 2*maxev. in this case
+| 40+maxevents - 40+maxev. +(2or1)*maxev.-1 | delta voltages per cycle or state for each event  | needs to be stored in block ram (analog, 46bit; digital, 1bit per value), analog values are stored in 64bit, therefore 2*maxev. in this case |
 
 channel-pin map:
 | channel |   pin
